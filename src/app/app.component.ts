@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.less'],
 })
 export class AppComponent {
-  title = 'gsplegalAngular7';
+  title = 'gsplegal';
   germanSelected = false;
 
   changeLanguage = function (key) {

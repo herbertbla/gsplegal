@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to gsplegalAngular7!');
+    expect(page.getTitleText()).toEqual('Welcome to gsplegal!');
   });
 
   afterEach(async () => {

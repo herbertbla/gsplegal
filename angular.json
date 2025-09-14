@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gsplegalAngular7": {
+    "gsplegal": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gsplegalAngular7",
+            "outputPath": "dist/gsplegal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gsplegalAngular7:build"
+            "browserTarget": "gsplegal:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gsplegalAngular7:build:production"
+              "browserTarget": "gsplegal:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gsplegalAngular7:build"
+            "browserTarget": "gsplegal:build"
           }
         },
         "test": {
@@ -117,7 +117,7 @@
         }
       }
     },
-    "gsplegalAngular7-e2e": {
+    "gsplegal-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -126,11 +126,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gsplegalAngular7:serve"
+            "devServerTarget": "gsplegal:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gsplegalAngular7:serve:production"
+              "devServerTarget": "gsplegal:serve:production"
             }
           }
         },
@@ -146,7 +146,6 @@
       }
     }
   },
-  "defaultProject": "gsplegalAngular7",
   "cli": {
     "cache": {
       "enabled": false
