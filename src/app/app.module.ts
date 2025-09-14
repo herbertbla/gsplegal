@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { registerLocaleData } from '@angular/common';
-
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -16,31 +14,36 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HaftungsausschlussComponent } from './haftungsausschluss/haftungsausschluss.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
-import { ScullyLibModule } from '@scullyio/ng-lib';
 
+// AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-@NgModule({ declarations: [
-        AppComponent,
-        TeamComponent,
-        TaetigkeitComponent,
-        HomeComponent,
-        InternationalComponent,
-        KontaktComponent,
-        ImpressumComponent,
-        HaftungsausschlussComponent,
-        DatenschutzComponent
-    ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
-        AppRoutingModule,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
-        }),
-        ScullyLibModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
-export class AppModule { }
+@NgModule({
+  declarations: [
+    AppComponent,
+    TeamComponent,
+    TaetigkeitComponent,
+    HomeComponent,
+    InternationalComponent,
+    KontaktComponent,
+    ImpressumComponent,
+    HaftungsausschlussComponent,
+    DatenschutzComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule, // unbedingt nötig
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
