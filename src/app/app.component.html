@@ -1,81 +1,99 @@
-<span class="gsptextfont" >
-<div class="container" style="padding-top: 5vh">
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-8">
-      <nav class="navbar navbar-expand-sm" style="padding-left: 0px">
-        <!-- Links -->
-        <ul class="navbar-nav">
+<span class="gsptextfont">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light w-100">
+    <div class="container-fluid">
+
+      <!-- Logo / Brand -->
+
+      <!-- Burger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse" id="mainNavbar" style="z-index:1050; position:relative;">
+        <!-- Links links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link gspheadertext" style="padding-left: 0px" routerLink="/home"
-               routerLinkActive="gsprouterlinkactive"> {{'HOME' | translate | uppercase}}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link gspheadertext" routerLink="/team"
-               routerLinkActive="gsprouterlinkactive"> {{'TEAM' | translate | uppercase}} </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link gspheadertext"
-               routerLink="/taetigkeitsbereich"
-               routerLinkActive="gsprouterlinkactive"> {{'TAETIGKEITSBEREICH' | translate | uppercase}} </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link gspheadertext"
-               routerLink="/international"
-               routerLinkActive="gsprouterlinkactive"> {{'INTERNATIONAL' | translate | uppercase}} </a>
-          </li>
-          <li class="nav-item" style="padding-right: 10px">
-            <a class="nav-link gspheadertext" routerLink="/kontakt"
-               routerLinkActive="gsprouterlinkactive"> {{'KONTAKT' | translate | uppercase}} </a>
+            <a class="nav-link gspheadertext" routerLink="/home" routerLinkActive="gsprouterlinkactive">
+              {{ 'HOME' | translate | uppercase }}
+            </a>
           </li>
           <li class="nav-item">
-            <a id="deutschID" class="nav-link gspheaderlanguage"
-               (click)="changeLanguage('de')"> {{'DEUTSCH' | translate}} </a>
+            <a class="nav-link gspheadertext" routerLink="/team" routerLinkActive="gsprouterlinkactive">
+              {{ 'TEAM' | translate | uppercase }}
+            </a>
           </li>
           <li class="nav-item">
-            <a id="englishID" class="nav-link gspheaderlanguage"
-               (click)="changeLanguage('en')"> {{'ENGLISCH' | translate}} </a>
+            <a class="nav-link gspheadertext" routerLink="/taetigkeitsbereich" routerLinkActive="gsprouterlinkactive">
+              {{ 'TAETIGKEITSBEREICH' | translate | uppercase }}
+            </a>
           </li>
-           <li class="nav-item">
-            <span class="btn btn-danger" (click)="openTodo()">todo</span>
+          <li class="nav-item">
+            <a class="nav-link gspheadertext" routerLink="/international" routerLinkActive="gsprouterlinkactive">
+              {{ 'INTERNATIONAL' | translate | uppercase }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gspheadertext" routerLink="/kontakt" routerLinkActive="gsprouterlinkactive">
+              {{ 'KONTAKT' | translate | uppercase }}
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-</div>
 
-<router-outlet></router-outlet>
-
-
-<div class="panel-footer" style="color:white; background-color: rgb(0,68,57); padding-top: 5vh; padding-bottom: 4vh">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-4">
-            <address>
-                GARGER SPALLINGER Rechtsanwälte GmbH<br>
-                Biberstraße 22, A-1010 Wien<br>
-                Tel: +43-1-319 94 70,
-                Fax: +43-1-319 94 70-70<br/>
-                <a class="gspfooterlink" href="mailto:office@gsplegal.at">office(AT)gsplegal.at </a>
-            </address>
+        <!-- Rechts: Sprachwahl + Todo -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link gspheaderlanguage" (click)="changeLanguage('de')">
+              <img src="assets/images/flags/de.png" alt="Deutsch" width="24" height="16">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gspheaderlanguage" (click)="changeLanguage('en')">
+              <img src="assets/images/flags/en.png" alt="English" width="24" height="16">
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="btn btn-danger ms-2" (click)="openTodo()">todo</span>
+          </li>
+        </ul>
       </div>
-      <div class="col-md-6">
-        <a routerLink="/impressum" class="gspfooterlink"
-           routerLinkActive="gsprouterlinkactive"> {{'IMPRESSUM' | translate |
-          uppercase}} </a> <br/>
-        <a routerLink="/haftungsausschluss" class="gspfooterlink"
-           routerLinkActive="gsprouterlinkactive"> {{'HAFTUNGSAUSSCHLUSS' |
-          translate | uppercase}} </a> <br/>
-        <a routerLink="/datenschutz" class="gspfooterlink"
-           routerLinkActive="gsprouterlinkactive"> {{'DATENSCHUTZ' | translate |
-          uppercase}} </a> <br/>
-        <div>© {{'ALLERECHTE' | translate }}</div>
+    </div>
+  </nav>
+
+  <!-- Hauptinhalt -->
+  <router-outlet></router-outlet>
+
+  <!-- FOOTER -->
+  <div class="panel-footer" style="color:white; background-color: rgb(0,68,57); padding-top: 5vh; padding-bottom: 4vh">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <address>
+            GARGER SPALLINGER Rechtsanwälte GmbH<br>
+            Biberstraße 22, A-1010 Wien<br>
+            Tel: +43-1-319 94 70, Fax: +43-1-319 94 70-70<br/>
+            <a class="gspfooterlink" href="mailto:office@gsplegal.at">office(AT)gsplegal.at</a>
+          </address>
+        </div>
+        <div class="col-md-6">
+          <a routerLink="/impressum" class="gspfooterlink" routerLinkActive="gsprouterlinkactive">
+            {{ 'IMPRESSUM' | translate | uppercase }}
+          </a><br/>
+          <a routerLink="/haftungsausschluss" class="gspfooterlink" routerLinkActive="gsprouterlinkactive">
+            {{ 'HAFTUNGSAUSSCHLUSS' | translate | uppercase }}
+          </a><br/>
+          <a routerLink="/datenschutz" class="gspfooterlink" routerLinkActive="gsprouterlinkactive">
+            {{ 'DATENSCHUTZ' | translate | uppercase }}
+          </a><br/>
+          <div>© {{ 'ALLERECHTE' | translate }}</div>
+        </div>
+        <div class="col-md-1"></div>
       </div>
-      <div class="col-md-2"></div>
     </div>
   </div>
-</div>
+
 </span>
