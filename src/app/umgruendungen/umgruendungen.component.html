@@ -1,0 +1,50 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/umgruendungen.jpg" alt="Umgründungen" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Umgründungen</h1>
+        <p>Erfolgreiche unternehmerische Tätigkeit erfordert Flexibilität und ein stetiges Mitwachsen mit den Herausforderungen. Dies gilt auch für die gewählte Unternehmensstruktur, weshalb ein Bedürfnis zur Änderung der einmal gewählten Rechtsform des Unternehmens oder zur Umstrukturierung entstehen kann. Sowohl im nationalen als auch im grenzüberschreitenden Kontext unterstützen wir Sie gerne mit unserer Erfahrung, um Ihr Unternehmen an die jeweiligen Anforderungen maßgeschneidert anzupassen.</p>
+        
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Nationale und grenzüberschreitende Verschmelzungen, Spaltungen und Umwandlungen</li>
+          <li>Errichtende und verschmelzende Umwandlungen</li>
+          <li>Einbringung von Betrieben, Teilbetrieben, Mitunternehmeranteilen und Kapitalanteilen</li>
+          <li>Spaltungen zur Neugründung und zur Aufnahme</li>
+          <li>Zusammenschlüsse und Realteilungen von Personengesellschaften</li>
+          <li>Rechtsformänderungen und Unternehmenszusammenschlüsse</li>
+          <li>Umgründungssteuerrecht</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Restructuring</h1>
+        <p>Successful business activity requires flexibility and continuous adaptation to challenges. This also applies to the chosen corporate structure, which may need to be changed or reorganized. We are happy to support you with our expertise in both national and cross-border contexts to tailor your company to the respective requirements.</p>
+        
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>National and cross-border mergers, divisions, and transformations</li>
+          <li>Formation and merger transformations</li>
+          <li>Transfer of businesses, business units, partnership interests, and capital shares</li>
+          <li>Divisions for new formations and acquisitions</li>
+          <li>Mergers and demergers of partnerships</li>
+          <li>Legal form changes and corporate combinations</li>
+          <li>Restructuring tax law</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,6 +13,7 @@ import { SpallingerComponent } from './team/spallinger/spallinger.component';
 import { ReiterComponent } from './team/reiter/reiter.component';
 import { RoupecComponent } from './team/roupec/roupec.component';
 import { GesellschaftsrechtComponent } from './gesellschaftsrecht/gesellschaftsrecht.component';
+import { UmgruendungenComponent } from './umgruendungen/umgruendungen.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'haftungsausschluss', component: HaftungsausschlussComponent },
   { path: 'datenschutz', component: DatenschutzComponent },
   { path: 'gesellschaftsrecht', component: GesellschaftsrechtComponent },
+  { path: 'umgruendungen', component: UmgruendungenComponent },
 ];
 
 @NgModule({
