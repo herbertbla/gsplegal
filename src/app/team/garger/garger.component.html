@@ -1,6 +1,6 @@
 <div class="container mt-4">
   <button (click)="goBack()" class="btn btn-link mb-4 d-flex align-items-center">
-    <i class="bi bi-arrow-left me-2"></i> {{ 'BACK_TO_TEAM' | translate }}
+    <i class="bi bi-arrow-left me-2"></i> {{ 'BACK' | translate }}
   </button>
 
   <div *ngIf="teamMember$ | async as member" class="row g-4">
