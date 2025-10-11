@@ -23,12 +23,35 @@ h4 {
 }
 
 ul {
-  padding-left: 1.5rem;
+  padding-left: 0;
   margin-bottom: 1.5rem;
   
   li {
     margin-bottom: 0.5rem;
     line-height: 1.6;
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+// Fix for mobile view
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1rem !important;
+  }
+  
+  h2, h3, h4, h5 {
+    word-break: break-word;
+  }
+  
+  ul li {
+    padding-left: 1.25rem;
+    text-indent: -1.25rem;
+    margin-left: 0.5rem;
   }
 }
 
