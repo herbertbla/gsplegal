@@ -27,6 +27,7 @@ import { BankingFinanceComponent } from './banking-finance/banking-finance.compo
 import { ContractLawComponent } from './contract-law/contract-law.component';
 import { PublicLawComponent } from './public-law/public-law.component';
 import { ImmobilienrechtComponent } from './immobilienrecht/immobilienrecht.component';
+import { ZivilprozessrechtComponent } from './zivilprozessrecht/zivilprozessrecht.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -56,7 +57,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BankingFinanceComponent,
     ContractLawComponent,
     PublicLawComponent,
-    ImmobilienrechtComponent
+    ImmobilienrechtComponent,
+    ZivilprozessrechtComponent
   ],
   imports: [
     BrowserModule,

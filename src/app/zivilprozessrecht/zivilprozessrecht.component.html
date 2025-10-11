@@ -1,0 +1,48 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/zivilprozess.jpg" alt="Zivilprozessrecht" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Zivilprozessrecht</h1>
+        <p>Das Zivilprozessrecht umfasst alle rechtlichen Regelungen, die den Ablauf von Zivilverfahren vor den ordentlichen Gerichten betreffen. Wir vertreten Ihre Interessen kompetent und zielgerichtet in allen Phasen des gerichtlichen Verfahrens, von der außergerichtlichen Streitbeilegung bis hin zur Vollstreckung von Titeln.</p>
+        
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Beratung und Vertretung in zivilrechtlichen Streitigkeiten</li>
+          <li>Durchführung von Mahnverfahren</li>
+          <li>Vertretung in allen Instanzen der ordentlichen Gerichtsbarkeit</li>
+          <li>Schiedsgerichtliche Verfahren</li>
+          <li>Vollstreckungs- und Insolvenzrecht</li>
+          <li>Mediation und außergerichtliche Konfliktlösung</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Civil Procedure Law</h1>
+        <p>Civil procedure law encompasses all legal regulations concerning the conduct of civil proceedings before ordinary courts. We represent your interests competently and purposefully in all phases of court proceedings, from out-of-court dispute resolution to the enforcement of judgments.</p>
+        
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>Advice and representation in civil disputes</li>
+          <li>Conduct of dunning procedures</li>
+          <li>Representation in all instances of ordinary jurisdiction</li>
+          <li>Arbitration proceedings</li>
+          <li>Enforcement and insolvency law</li>
+          <li>Mediation and out-of-court dispute resolution</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
