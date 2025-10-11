@@ -25,6 +25,7 @@ import { ArbeitsrechtComponent } from './arbeitsrecht/arbeitsrecht.component';
 import { GlobalMobilityComponent } from './global-mobility/global-mobility.component';
 import { BankingFinanceComponent } from './banking-finance/banking-finance.component';
 import { ContractLawComponent } from './contract-law/contract-law.component';
+import { PublicLawComponent } from './public-law/public-law.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -52,7 +53,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ArbeitsrechtComponent,
     GlobalMobilityComponent,
     BankingFinanceComponent,
-    ContractLawComponent
+    ContractLawComponent,
+    PublicLawComponent
   ],
   imports: [
     BrowserModule,

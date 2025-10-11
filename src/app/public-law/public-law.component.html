@@ -1,0 +1,42 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/offentlichkeitsrecht.jpg" alt="Öffentliches Recht" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Öffentliches Recht</h1>
+        <p>Mit der Gründung und dem laufenden Betrieb eines Unternehmens gehen nicht nur unternehmens- und gesellschaftsrechtliche Aspekte einher, sondern es findet sich auch ein einschlägiger Regelungsbereich im öffentlichen Recht. Dies betrifft unter anderem die Erlangung einer Gewerbeberechtigung sowie die allenfalls notwendige Bestellung eines gewerberechtlichen Geschäftsführers sowie branchenspezifische Genehmigungsverfahren. Gerne unterstützen wir Sie durch unsere Expertise und Erfahrung umfassend in diesbezüglichen Belangen.</p>
+
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Unterstützung in Konzessionsverfahren (FMA)</li>
+          <li>Errichtung und Beratung von Wertpapierfirmen</li>
+          <li>Gewerberecht</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Public Law</h1>
+        <p>The establishment and ongoing operation of a company not only involve corporate and company law aspects but also fall under relevant public law regulations. This includes, among other things, obtaining trade licenses, the potential appointment of a legally required managing director, and industry-specific approval procedures. We are happy to support you comprehensively with our expertise and experience in these matters.</p>
+
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>Support in concession procedures (FMA)</li>
+          <li>Establishment and consulting for securities firms</li>
+          <li>Trade law</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

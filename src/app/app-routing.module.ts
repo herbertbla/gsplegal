@@ -19,6 +19,7 @@ import { ArbeitsrechtComponent } from './arbeitsrecht/arbeitsrecht.component';
 import { GlobalMobilityComponent } from './global-mobility/global-mobility.component';
 import { BankingFinanceComponent } from './banking-finance/banking-finance.component';
 import { ContractLawComponent } from './contract-law/contract-law.component';
+import { PublicLawComponent } from './public-law/public-law.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'global-mobility', component: GlobalMobilityComponent },
   { path: 'banking-finance', component: BankingFinanceComponent },
   { path: 'contract-law', component: ContractLawComponent },
+  { path: 'public-law', component: PublicLawComponent },
 ];
 
 @NgModule({
