@@ -1,28 +1,32 @@
-<!-- Header -->
-<div class=" gspinternationalheader">
+<!-- Header with background image -->
+<div class="gspinternationalheader">
   <div class="container gsptextinimage_pos">
     <div class="row">
       <div class="col-md-8">
-        <img  style="width: 327px" src="../../assets/images/gs_logo_home_kontakt.png">
+        <img style="width: 327px" src="../../assets/images/gs_logo_home_kontakt.png" alt="GSP Logo">
       </div>
     </div>
   </div>
 </div>
 
-<!-- /.container -->
-<div class="gspparagraph" style="background-color: rgb(255,255,255)">
-  <div class="container ">
+<!-- Main Content -->
+<div class="content-container">
+  <div class="container">
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-8">
-        <p class="gsptitlefont">{{'INTERNATIONAL' | translate | uppercase}} </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-9">
-        <p>{{'INTP1' | translate}} </p>
-        <p>{{'INTP2' | translate}} </p>
+      <div class="col-12">
+        <div *ngIf="currentLang === 'de'" class="content-de">
+          <h1>International</h1>
+          <p>Grenzüberschreitende Sachverhalte gehören zum daily business vieler Unternehmen, so auch bei uns.</p>
+          <p>Wir beraten laufend Unternehmen aus den verschiedensten Branchen beim Markteintritt in Österreich, sei es durch Gründung einer Tochtergesellschaft oder Schaffung einer Zweigniederlassung, sowie bei grenzüberschreitenden Umstrukturierungen, Transaktionen sowie Akquisitionen. Darüber hinaus unterstützen wir ausländische Unternehmen durch unser fundiertes Wissen und unsere langjährige Erfahrung im österreichischen Gesellschafts-, Arbeits-, Immobilien-, Gewerbe-, Datenschutz-, Immaterialgüter- und Immobilienrecht. Ebenfalls eine Kernkompetenz stellt die Erstellung und Prüfung internationaler Verträge dar.</p>
+          <p>Unsere rechtliche Expertise gepaart mit unserem betriebswirtschaftlichen Verständnis gewährleistet dabei erfolgs- und lösungsorientierte Ergebnisse.</p>
+        </div>
+
+        <div *ngIf="currentLang === 'en'" class="content-en">
+          <h1>International</h1>
+          <p>Cross-border matters are part of the daily business of many companies, including ours.</p>
+          <p>We continuously advise companies from various industries on market entry in Austria, whether through the establishment of a subsidiary or the creation of a branch, as well as on cross-border restructurings, transactions, and acquisitions. In addition, we support foreign companies with our in-depth knowledge and many years of experience in Austrian corporate, labor, real estate, trade, data protection, intellectual property, and real estate law. Another core competence is the preparation and review of international contracts.</p>
+          <p>Our legal expertise combined with our business understanding ensures results that are success- and solution-oriented.</p>
+        </div>
       </div>
     </div>
   </div>
