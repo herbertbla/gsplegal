@@ -25,7 +25,4 @@ export class AppComponent {
     // Enable auto-scrolling to top on route changes
     this.scrollService.enableAutoScrollToTop();
   }
-  openTodo = function() {
-    window.open('http://jupiter.bplaced.net/todo.htm');
-  }
 }

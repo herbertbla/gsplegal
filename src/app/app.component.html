@@ -53,7 +53,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <span class="btn btn-danger ms-2" (click)="openTodo()">todo</span>
+            <a class="nav-link gspheadertext" routerLink="/todo" routerLinkActive="gsprouterlinkactive">
+              {{ 'TODO' | translate | uppercase }}
+            </a>
           </li>
         </ul>
       </div>

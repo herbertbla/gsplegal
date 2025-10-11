@@ -1,0 +1,153 @@
+.todo-container {
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-content {
+  width: 100%;
+  max-width: 1400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  margin-top: 2rem;
+}
+
+.todo-columns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.todo-column {
+  flex: 1;
+  min-width: 0;
+  
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e9ecef;
+    font-weight: 600;
+  }
+}
+
+.todo-section {
+  margin-bottom: 2rem;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  
+  h3 {
+    color: #34495e;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #3498db;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 0 0;
+    
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+      position: relative;
+      padding-left: 1.5rem;
+      
+      &::before {
+        content: '•';
+        color: #95a5a6;
+        font-size: 1.2em;
+        position: absolute;
+        left: 0;
+      }
+      
+      ul {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        
+        li {
+          font-size: 0.95em;
+          color: #555;
+        }
+      }
+    }
+  }
+}
+
+// Status indicators
+.pending, .in-progress, .completed {
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.pending {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+// Responsive adjustments
+@media (max-width: 992px) {
+  .todo-columns {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .todo-section {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .todo-container {
+    padding: 1rem;
+  }
+  
+  .todo-content {
+    padding: 1.25rem;
+  }
+  
+  .todo-section h3 {
+    font-size: 1rem;
+  }
+  
+  .pending, .in-progress, .completed {
+    display: block;
+    margin: 0.25rem 0 0 0;
+    width: fit-content;
+  }
+}

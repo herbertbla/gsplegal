@@ -22,6 +22,7 @@ import { ContractLawComponent } from './contract-law/contract-law.component';
 import { PublicLawComponent } from './public-law/public-law.component';
 import { ImmobilienrechtComponent } from './immobilienrecht/immobilienrecht.component';
 import { ZivilprozessrechtComponent } from './zivilprozessrecht/zivilprozessrecht.component';
+import { TodoComponent } from './todo/todo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -47,6 +48,7 @@ const routes: Routes = [
   { path: 'public-law', component: PublicLawComponent },
   { path: 'immobilienrecht', component: ImmobilienrechtComponent },
   { path: 'zivilprozessrecht', component: ZivilprozessrechtComponent },
+  { path: 'todo', component: TodoComponent },
 ];
 
 @NgModule({
