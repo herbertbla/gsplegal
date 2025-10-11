@@ -59,17 +59,15 @@
   "DATH4": "4. Use of data",
   "DATP41": "We will not process the provided data for purposes other than those covered by the client relationship or your consent or in any other way by an provision in accordance with purposes covered by GDPR. An exception is the use for statistical purposes on an anonymous basis.",
   "DATH5": "5. Transfer of data",
-  "DATP51": "For the execution of a contract or a business relationship it is possibly also required to transfer data to third parties (e.g. opposite side, substitutes, insurance companies, service providers, which are engaged by is and which receive data from us, etc.), courts or authorities.",
   "DATP52": "A transfer of your data takes place only on the basis of GDPR, in particular for the execution of a contract or based on your prior consent. Furthermore, we inform you that in the course of our legal representation and support regularly also facts and case-related information regarding you are obtained from third parties.",
   "DATP53": "Some of the recipients of your personal data outlined above are not within your country or process your personal data there. The data protection level in other countries may possibly not comply with the level in Austria. We transfer your personal data only to countries for which the EU Commission has decided that they have an adequate data protection level or we take measures to ensure that recipients have an adequate data protection level as we conclude standard contractual clauses (2010/87/EC and/or 2004/915/EC).",
-  "DATH6": "6. Notification of data mishap",
   "DATP61": "We will try our best to secure that data mishaps are recognized early and are notified – where appropriate – to you or to the competent supervisory authority, respectively, taking into account the affected data categories.",
   "DATH7": "7. Storage of data",
-  "DATP71": "We will not store data for a longer period than required for the fulfillment of our contractual respectively legal obligations and as required for the defense of possible liability claims. In this respect, we will also consider legal retention and documentation obligations.",
-  "DATH8": "8. Our contact details",
+  "DATP71": "We will not store data for longer than is necessary to fulfill our contractual or legal obligations and to defend against any liability claims. In this regard, we will also take into account the statutory retention and documentation obligations.",
+  "ANFP1": "Our law firm is located in the 1st district of Vienna, near Schwedenplatz.",
+  "ANFP2": "You can reach us by car or by public transport.",
+  "ANFP3": "Tram: Line 1/2, Subway: U4/U1 - 'Schwedenplatz' station",
+  "DATH8": "8. Our Contact Details",
   "DATP81": "The protection of your data is very important for us. We are available at any time for your questions or your withdrawal of consent under following address.",
-  "IMPP1" : "We are attorneys under Austrian law and are subject to the applicable professional regulations and rules of conduct of the Vienna Bar Association.",
-  "ANFP1": "Unsere Kanzlei befindet sich im 1. Wiener Gemeindebezirk in der Nähe des Schweden Platz.",
-  "ANFP2": "Sie erreichen uns mit dem Auto oder mit den öffentlichen Verkehrsmitteln.",
-  "ANFP3": "Straßenbahn: Linie 1/2, U-Bahn: U4/U1 - Station ‚Schwedenplatz‘"
+  "IMPP1": "We are attorneys under Austrian law and are subject to the applicable professional regulations and rules of conduct of the Vienna Bar Association."
 }
