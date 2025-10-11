@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { ScrollService } from './services/scroll.service';
 
 @Component({
     selector: 'app-root',
@@ -16,8 +17,13 @@ export class AppComponent {
     this.translate.use(key);
   };
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private scrollService: ScrollService
+  ) {
     translate.setDefaultLang('de');
+    // Enable auto-scrolling to top on route changes
+    this.scrollService.enableAutoScrollToTop();
   }
   openTodo = function() {
     window.open('http://jupiter.bplaced.net/todo.htm');
