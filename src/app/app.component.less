@@ -13,9 +13,29 @@
 
 .gspcardimage {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
   animation: fadeIn 2s ease forwards;
-  background-attachment: fixed; /* Parallax */
+  background-attachment: scroll; /* Disable parallax on mobile */
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    max-height: 120px;
+  }
+  
+  @media (max-width: 480px) {
+    max-height: 100px;
+  }
+}
+
+/* Ensure the card containers have proper height on mobile */
+.border-0 {
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+  }
 }
 
 @keyframes fadeIn {
