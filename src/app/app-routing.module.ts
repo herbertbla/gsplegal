@@ -16,6 +16,7 @@ import { GesellschaftsrechtComponent } from './gesellschaftsrecht/gesellschaftsr
 import { UmgruendungenComponent } from './umgruendungen/umgruendungen.component';
 import { MergersAcquisitionsComponent } from './mergers-acquisitions/mergers-acquisitions.component';
 import { ArbeitsrechtComponent } from './arbeitsrecht/arbeitsrecht.component';
+import { GlobalMobilityComponent } from './global-mobility/global-mobility.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'umgruendungen', component: UmgruendungenComponent },
   { path: 'mergers-acquisitions', component: MergersAcquisitionsComponent },
   { path: 'arbeitsrecht', component: ArbeitsrechtComponent },
+  { path: 'global-mobility', component: GlobalMobilityComponent },
 ];
 
 @NgModule({

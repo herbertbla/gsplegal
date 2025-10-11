@@ -1,0 +1,46 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/international_global.jpg" alt="Global Mobility" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Global Mobility</h1>
+        <p>Grenzüberschreitende Tätigkeiten von Unternehmen erfordern fundierte Beratung insbesondere auch im Bereich der Arbeitnehmerentsendung und -überlassung sowie des Niederlassungs- und Aufenthaltsrechts. Mit unserer Expertise unterstützen wir Sie gerne bei der Umsetzung diesbezüglicher Vorhaben.</p>
+        
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Beratung bei der Arbeitnehmerentsendung und -überlassung im internationalen Kontext</li>
+          <li>Unterstützung bei Fragen des Niederlassungs- und Aufenthaltsrechts</li>
+          <li>Beratung zu sozialversicherungsrechtlichen Aspekten bei Auslandseinsätzen</li>
+          <li>Vertragsgestaltung für internationale Arbeitsverhältnisse</li>
+          <li>Unterstützung bei der Beantragung von Aufenthaltstiteln und Arbeitserlaubnissen</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Global Mobility</h1>
+        <p>Cross-border activities of companies require expert advice, especially in the areas of employee secondment and temporary employment, as well as establishment and residence law. With our expertise, we are happy to support you in implementing related projects.</p>
+        
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>Advice on employee secondment and temporary employment in an international context</li>
+          <li>Support with questions regarding establishment and residence law</li>
+          <li>Consulting on social security aspects of international assignments</li>
+          <li>Drafting contracts for international employment relationships</li>
+          <li>Assistance with applications for residence permits and work authorizations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

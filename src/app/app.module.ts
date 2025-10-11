@@ -22,6 +22,7 @@ import { GesellschaftsrechtComponent } from './gesellschaftsrecht/gesellschaftsr
 import { UmgruendungenComponent } from './umgruendungen/umgruendungen.component';
 import { MergersAcquisitionsComponent } from './mergers-acquisitions/mergers-acquisitions.component';
 import { ArbeitsrechtComponent } from './arbeitsrecht/arbeitsrecht.component';
+import { GlobalMobilityComponent } from './global-mobility/global-mobility.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -46,7 +47,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GesellschaftsrechtComponent,
     UmgruendungenComponent,
     MergersAcquisitionsComponent,
-    ArbeitsrechtComponent
+    ArbeitsrechtComponent,
+    GlobalMobilityComponent
   ],
   imports: [
     BrowserModule,
