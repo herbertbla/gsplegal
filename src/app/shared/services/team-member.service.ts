@@ -60,22 +60,57 @@ export class TeamMemberService {
       ]
     },
     {
-      id: 'stefan-pallinger',
+      id: 'stefan-spallinger',
       title: 'MMag.',
-      firstName: 'Stefan',
-      lastName: 'Pallinger',
-      position: 'Rechtsanwalt | Partner',
+      firstName: 'STEFAN',
+      lastName: 'SPALLINGER',
+      position: 'Rechtsanwalt, Partner',
+      positionEn: 'Attorney-at-Law, Partner',
       imageUrl: 'assets/images/spallinger.jpg',
-      description: 'Detailed description about Stefan Pallinger...',
-      email: 'pallinger@gsplegal.at',
-      phone: '+43 1 123 4567',
-      languages: ['Deutsch', 'Englisch', 'Französisch'],
+      email: 'spallinger@gsplegal.at',
+      phone: '+43 1 319 94 70',
+      fax: '+43 1 319 94 70-70',
+      expertise: [
+        'Unternehmens- und Gesellschaftsrecht',
+        'Umgründungen und Umstrukturierungen',
+        'Merger & Acquisitions',
+        'Grenzüberschreitende Transaktionen',
+        'Vertragsrecht (national und international)',
+        'Zivilrecht'
+      ],
+      expertiseEn: [
+        'Corporate and Commercial Law',
+        'Reorganizations and Restructurings',
+        'Merger & Acquisitions',
+        'Cross-border Transactions',
+        'Contract Law (national and international)',
+        'Civil Law'
+      ],
+      languages: ['Deutsch', 'Englisch', 'Spanisch'],
+      languagesEn: ['German', 'English', 'Spanish'],
       education: [
-        'Magister der Rechtswissenschaften'
+        'Studium der Rechtswissenschaften, Universität Wien (Mag. iur. 2000)',
+        'Studium der Internationalen Betriebswirtschaftslehre, Universität Wien (Mag. rer. soc. oec 2001)',
+        'LL.M.-Studium an der Columbia University School of Law, New York, USA (2002/2003)'
+      ],
+      educationEn: [
+        'University degree in Law, University of Vienna (Mag. iur. 2000)',
+        'University degree in International Business Administration, University of Vienna (Mag. rer. soc. oec 2001)',
+        'LL.M. at Columbia University School of Law, New York, USA (2002/2003)'
       ],
       experience: [
-        'Langjährige Erfahrung im Arbeitsrecht',
-        'Schwerpunkt auf internationalen Rechtsfällen'
+        'Partner bei GARGER SPALLINGER Rechsanwälte GmbH seit 2010',
+        'Eingetragener Rechtsanwalt seit 2008',
+        'Eingetragen als Attorney-at-Law in New York seit 2005',
+        'Rechtsanwalt/-anwärter in renommierten Wirtschaftskanzleien',
+        'Österreichisches Außenministerium'
+      ],
+      experienceEn: [
+        'Partner with GARGER SPALLINGER Attorneys-at-Law GmbH since 2010',
+        'Admitted as Attorney-at-Law in Austria since 2008',
+        'Admitted as Attorney-at-Law in New York since 2005',
+        'Attorney/Associate with renowned commercial law firms',
+        'Austrian Federal Ministry for European and International Affairs'
       ]
     }
     // Add more team members as needed

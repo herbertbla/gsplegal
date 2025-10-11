@@ -9,12 +9,14 @@ import { ImpressumComponent } from "./impressum/impressum.component";
 import { HaftungsausschlussComponent } from "./haftungsausschluss/haftungsausschluss.component";
 import { DatenschutzComponent } from "./datenschutz/datenschutz.component";
 import { GargerComponent } from './team/garger/garger.component';
+import { SpallingerComponent } from './team/spallinger/spallinger.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'team', component: TeamComponent },
   { path: 'team/bernhard-garger', component: GargerComponent },
+  { path: 'team/stefan-spallinger', component: SpallingerComponent },
   { path: 'taetigkeitsbereich', component: TaetigkeitComponent },
   { path: 'international', component: InternationalComponent },
   { path: 'kontakt', component: KontaktComponent },

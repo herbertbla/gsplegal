@@ -15,6 +15,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { HaftungsausschlussComponent } from './haftungsausschluss/haftungsausschluss.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { GargerComponent } from './team/garger/garger.component';
+import { SpallingerComponent } from './team/spallinger/spallinger.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImpressumComponent,
     HaftungsausschlussComponent,
     DatenschutzComponent,
-    GargerComponent
+    GargerComponent,
+    SpallingerComponent
   ],
   imports: [
     BrowserModule,
