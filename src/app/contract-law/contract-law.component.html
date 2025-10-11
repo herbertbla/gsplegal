@@ -1,0 +1,46 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/vertragsrecht.jpg" alt="Vertragsgestaltung, Zivil- und Schadensersatzrecht" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Vertragsgestaltung, Zivil- und Schadensersatzrecht</h1>
+        <p>Die Qualität eines Vertrages zeigt sich zumeist erst dann, wenn es bereits zu einem Konflikt gekommen ist. Damit Sie auch dann die intendierte Position rechtssicher vertreten können, bedarf es daher einer fundierten und sämtliche mögliche Unsicherheit ausräumenden Vertragsgestaltung. Gerne unterstützen wir Sie dabei, damit es im Nachhinein kein böses Erwachen gibt. Sollte es dennoch zu Auseinandersetzungen bzw. Auffassungsunterschieden zwischen Ihnen und Ihrem Vertragspartner bzw. Dritten kommen, können wir Ihnen durch unsere langjährige Erfahrung im Zivil- und Schadensersatzrecht die notwendige Unterstützung bieten.</p>
+
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Nationale und internationale Vertragsgestaltungen</li>
+          <li>Erstellung und Beratung von komplexen internationalen Verträgen</li>
+          <li>Vertragsverhandlungen</li>
+          <li>Rechtsberatung in Fragen des Zivilrechts</li>
+          <li>Durchsetzung von Ansprüchen in außergerichtlichen und gerichtlichen Verfahren</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Contract Law, Civil Law and Damage Claims</h1>
+        <p>The quality of a contract often only becomes apparent when a conflict has already arisen. To ensure you can maintain your intended position with legal certainty, a well-founded contract design that eliminates all possible uncertainties is essential. We are happy to support you to avoid any unpleasant surprises later on. Should disputes or differences of opinion arise between you and your contractual partner or third parties, we can provide you with the necessary support through our many years of experience in civil and tort law.</p>
+
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>National and international contract design</li>
+          <li>Drafting and consulting for complex international contracts</li>
+          <li>Contract negotiations</li>
+          <li>Legal advice on civil law matters</li>
+          <li>Enforcement of claims in out-of-court and court proceedings</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
