@@ -112,6 +112,52 @@ export class TeamMemberService {
         'Attorney/Associate with renowned commercial law firms',
         'Austrian Federal Ministry for European and International Affairs'
       ]
+    },
+    {
+      id: 'daniel-reiter',
+      title: 'Dr.',
+      firstName: 'DANIEL',
+      lastName: 'REITER',
+      position: 'Rechtsanwalt, Partner',
+      positionEn: 'Attorney-at-Law, Partner',
+      imageUrl: 'assets/images/drichter.jpg',
+      email: 'dreiter@gsplegal.at',
+      phone: '+43 1 319 94 70',
+      fax: '+43 1 319 94 70-70',
+      expertise: [
+        'Unternehmens- und Gesellschaftsrecht',
+        'Umgründungen und Umstrukturierungen',
+        'Merger & Acquisitions',
+        'Kapitalmarktrecht',
+        'Vertragsrecht, Zivil- und Schadenersatzrecht'
+      ],
+      expertiseEn: [
+        'Corporate and Commercial Law',
+        'Reorganizations and Restructurings',
+        'Merger & Acquisitions',
+        'Capital Markets Law',
+        'Contract Law, Civil and Tort Law'
+      ],
+      languages: ['Deutsch', 'Englisch'],
+      languagesEn: ['German', 'English'],
+      education: [
+        'Studium der Rechtswissenschaften, Universität Wien (Mag. iur. 2010, Dr. iur. 2013)'
+      ],
+      educationEn: [
+        'University degree in Law, University of Vienna (Mag. iur. 2010, Dr. iur. 2013)'
+      ],
+      experience: [
+        'Partner bei GARGER SPALLINGER Rechsanwälte GmbH seit 2023',
+        'Eingetragener Rechtsanwalt seit 2015',
+        'Partner bei einer renommierten Wirtschaftskanzlei von 2021 bis 2023',
+        'Rechtsanwalt/-anwärter bei einer renommierten Wirtschaftskanzlei von 2011 bis 2021'
+      ],
+      experienceEn: [
+        'Partner with GARGER SPALLINGER Attorneys-at-Law GmbH since 2023',
+        'Admitted as Attorney-at-Law in Austria since 2015',
+        'Partner with a renowned commercial law firm from 2021 to 2023',
+        'Attorney/Associate with a renowned commercial law firm from 2011 to 2021'
+      ]
     }
     // Add more team members as needed
   ];

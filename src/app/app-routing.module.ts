@@ -10,6 +10,7 @@ import { HaftungsausschlussComponent } from "./haftungsausschluss/haftungsaussch
 import { DatenschutzComponent } from "./datenschutz/datenschutz.component";
 import { GargerComponent } from './team/garger/garger.component';
 import { SpallingerComponent } from './team/spallinger/spallinger.component';
+import { ReiterComponent } from './team/reiter/reiter.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent },
   { path: 'team/bernhard-garger', component: GargerComponent },
   { path: 'team/stefan-spallinger', component: SpallingerComponent },
+  { path: 'team/daniel-reiter', component: ReiterComponent },
   { path: 'taetigkeitsbereich', component: TaetigkeitComponent },
   { path: 'international', component: InternationalComponent },
   { path: 'kontakt', component: KontaktComponent },
