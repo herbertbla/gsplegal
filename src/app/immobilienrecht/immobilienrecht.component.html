@@ -1,0 +1,46 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/immobilienrecht.jpg" alt="Immobilienrecht" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Immobilienrecht</h1>
+        <p>Immobilientransaktionen können in vielen verschiedenen Ausgestaltungsvarianten erfolgen und tangieren eine Vielzahl unterschiedlicher Rechtsbereiche. Durch unsere Expertise und die langjährige Erfahrung bieten wir Ihnen die hierfür notwendige rechtliche Unterstützung, sei es im Zusammenhang mit Betriebsvermögen, einem Privatverkauf oder einer Anschaffung zur Eigennutzung oder auch als reine Geldanlage.</p>
+        
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Strukturierung und Ausarbeitung von Immobilienkauf- und -verkaufsverträgen</li>
+          <li>Ausfertigung von Immobilienkaufverträgen, Anmeldungen beim Grundbuch</li>
+          <li>Alle Formen von Treuhandvereinbarungen</li>
+          <li>Rechtsberatung in allen immobilienrechtlichen Fragen</li>
+          <li>Umfassende Begleitung von Immobilien-Projekten</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Real Estate Law</h1>
+        <p>Real estate transactions can take many different forms and touch upon a wide variety of legal areas. With our expertise and many years of experience, we provide the necessary legal support for transactions related to business assets, private sales, purchases for personal use, or pure investment purposes.</p>
+        
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>Structuring and drafting real estate purchase and sale agreements</li>
+          <li>Preparation of real estate purchase contracts, land registry applications</li>
+          <li>All forms of trust agreements</li>
+          <li>Legal advice on all real estate law matters</li>
+          <li>Comprehensive support for real estate projects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

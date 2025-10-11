@@ -20,6 +20,7 @@ import { GlobalMobilityComponent } from './global-mobility/global-mobility.compo
 import { BankingFinanceComponent } from './banking-finance/banking-finance.component';
 import { ContractLawComponent } from './contract-law/contract-law.component';
 import { PublicLawComponent } from './public-law/public-law.component';
+import { ImmobilienrechtComponent } from './immobilienrecht/immobilienrecht.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'banking-finance', component: BankingFinanceComponent },
   { path: 'contract-law', component: ContractLawComponent },
   { path: 'public-law', component: PublicLawComponent },
+  { path: 'immobilienrecht', component: ImmobilienrechtComponent },
 ];
 
 @NgModule({
