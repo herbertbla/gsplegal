@@ -21,6 +21,7 @@ import { RoupecComponent } from './team/roupec/roupec.component';
 import { GesellschaftsrechtComponent } from './gesellschaftsrecht/gesellschaftsrecht.component';
 import { UmgruendungenComponent } from './umgruendungen/umgruendungen.component';
 import { MergersAcquisitionsComponent } from './mergers-acquisitions/mergers-acquisitions.component';
+import { ArbeitsrechtComponent } from './arbeitsrecht/arbeitsrecht.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -44,7 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RoupecComponent,
     GesellschaftsrechtComponent,
     UmgruendungenComponent,
-    MergersAcquisitionsComponent
+    MergersAcquisitionsComponent,
+    ArbeitsrechtComponent
   ],
   imports: [
     BrowserModule,

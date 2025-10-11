@@ -1,0 +1,44 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/arbeitsrecht.jpg" alt="Arbeitsrecht" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Arbeitsrecht</h1>
+        <p>Was wäre ein Unternehmen ohne seine wichtigste Ressource, die Mitarbeiter/innen? Die korrekte Ausgestaltung des Arbeits- /Dienstverhältnisses und die Lösung allfälliger Konflikte stellt dabei eine für den Erfolg des Unternehmens wesentliche Komponente dar. Damit Sie sich auf Ihr Kerngeschäft konzentrieren können, unterstützen wir Sie gerne bei sämtlichen Fragen des Arbeitsrechts.</p>
+        
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Ausarbeitung und Überprüfung von Geschäftsführer- und Vorstandsverträgen</li>
+          <li>Ausarbeitung und Überprüfung von Dienstverträgen</li>
+          <li>Unterstützung von Arbeitgebern und Arbeitnehmern in arbeitsrechtlichen Fragen</li>
+          <li>Verfahren vor den Arbeits- und Sozialgerichten</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Labor Law</h1>
+        <p>What would a company be without its most important resource, its employees? The proper design of employment relationships and the resolution of any conflicts are essential components for a company's success. So you can focus on your core business, we are happy to support you with all questions regarding labor law.</p>
+        
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>Drafting and review of management and executive board contracts</li>
+          <li>Drafting and review of employment contracts</li>
+          <li>Support for employers and employees in labor law matters</li>
+          <li>Proceedings before labor and social courts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
