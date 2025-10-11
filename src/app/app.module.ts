@@ -17,6 +17,7 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { GargerComponent } from './team/garger/garger.component';
 import { SpallingerComponent } from './team/spallinger/spallinger.component';
 import { ReiterComponent } from './team/reiter/reiter.component';
+import { RoupecComponent } from './team/roupec/roupec.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     DatenschutzComponent,
     GargerComponent,
     SpallingerComponent,
-    ReiterComponent
+    ReiterComponent,
+    RoupecComponent
   ],
   imports: [
     BrowserModule,

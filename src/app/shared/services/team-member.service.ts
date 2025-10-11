@@ -158,6 +158,38 @@ export class TeamMemberService {
         'Partner with a renowned commercial law firm from 2021 to 2023',
         'Attorney/Associate with a renowned commercial law firm from 2011 to 2021'
       ]
+    },
+    {
+      id: 'anita-roupec',
+      title: 'Mag.',
+      firstName: 'ANIA',
+      lastName: 'ROUPEC',
+      position: 'Rechtsanwältin',
+      positionEn: 'Attorney-at-Law',
+      imageUrl: 'assets/images/roupec.jpg',
+      email: 'aroupec@gsplegal.at',
+      phone: '+43 1 319 94 70',
+      fax: '+43 1 319 94 70-70',
+      expertise: [
+        'xxx'
+      ],
+      expertiseEn: [
+        'xxx'
+      ],
+      languages: ['Deutsch', 'Englisch'],
+      languagesEn: ['German', 'English'],
+      education: [
+        'xxx'
+      ],
+      educationEn: [
+        'xxx'
+      ],
+      experience: [
+        'xxx'
+      ],
+      experienceEn: [
+        'xxx'
+      ]
     }
     // Add more team members as needed
   ];
