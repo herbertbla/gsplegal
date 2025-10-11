@@ -1,0 +1,52 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/taetigkeitsbereiche_mergers.jpg" alt="Mergers & Acquisitions" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Mergers & Acquisitions</h1>
+        <p>Die Gründe für M&A sind vielfältig. Oftmals sind die Möglichkeiten eines organischen Wachstums begrenzt oder sogar ausgeschöpft. Damit rückt ein anorganisches Wachstum mittels Zusammenschlüsse oder Zukäufe in den Mittelpunkt. Die Positionen der Käufer und der Verkäufer können dabei sehr unterschiedlich ausfallen. Mit unserer fundierten Praxis-Erfahrung beraten und unterstützen wir Sie gerne bei der Durchführung von M&A-Transaktionen sowohl auf Käufer- als auch auf Verkäuferseite.</p>
+        
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Analyse und Implementierung von M&A-Transaktionen</li>
+          <li>Erstellung der erforderlichen Vertragsdokumentation</li>
+          <li>Share Deals und Asset Deals</li>
+          <li>Management Buyouts</li>
+          <li>Gesellschafterausschluss</li>
+          <li>Durchführung einer rechtlichen Due-Diligence</li>
+          <li>Beratung und Begleitung bei M&A-Verhandlungen</li>
+          <li>Begleitung bei der (rechtlichen) post-merger Integration</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Mergers & Acquisitions</h1>
+        <p>The reasons for M&A are diverse. Often, the possibilities for organic growth are limited or even exhausted. This brings inorganic growth through mergers or acquisitions into focus. The positions of buyers and sellers can vary significantly. With our solid practical experience, we are happy to advise and support you in conducting M&A transactions, whether you are on the buyer's or seller's side.</p>
+        
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>Analysis and implementation of M&A transactions</li>
+          <li>Preparation of required contract documentation</li>
+          <li>Share deals and asset deals</li>
+          <li>Management buyouts</li>
+          <li>Shareholder squeeze-out</li>
+          <li>Conducting legal due diligence</li>
+          <li>Advice and support during M&A negotiations</li>
+          <li>Support in (legal) post-merger integration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

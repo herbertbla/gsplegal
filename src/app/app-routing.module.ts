@@ -14,6 +14,7 @@ import { ReiterComponent } from './team/reiter/reiter.component';
 import { RoupecComponent } from './team/roupec/roupec.component';
 import { GesellschaftsrechtComponent } from './gesellschaftsrecht/gesellschaftsrecht.component';
 import { UmgruendungenComponent } from './umgruendungen/umgruendungen.component';
+import { MergersAcquisitionsComponent } from './mergers-acquisitions/mergers-acquisitions.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'datenschutz', component: DatenschutzComponent },
   { path: 'gesellschaftsrecht', component: GesellschaftsrechtComponent },
   { path: 'umgruendungen', component: UmgruendungenComponent },
+  { path: 'mergers-acquisitions', component: MergersAcquisitionsComponent },
 ];
 
 @NgModule({
