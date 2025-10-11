@@ -5,8 +5,34 @@
   background-image: url("../../assets/images/header/header_team.jpg");
   background-position: center center;
   background-size: cover;
-  overflow: hidden;
+  height: 450px;
   padding-top: 30px;
+  position: relative;
+  animation: fadeIn 2s ease forwards;
+  background-attachment: fixed;
+}
+
+// Hover effect for team member cards
+.gsp-card-hover {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    .gspcardimagepartner {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .gspteambottomcentered {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 0 0 8px 8px;
+    }
+  }
   animation: fadeIn 2s ease forwards;
   background-attachment: fixed; /* Parallax */
 }
