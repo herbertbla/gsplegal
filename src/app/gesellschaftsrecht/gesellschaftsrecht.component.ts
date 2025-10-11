@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -12,7 +13,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class GesellschaftsrechtComponent implements OnInit {
   currentLang: string = 'de';
 
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private location: Location
+  ) {}
 
   ngOnInit() {
     this.currentLang = this.translate.currentLang || 'de';
@@ -23,5 +27,9 @@ export class GesellschaftsrechtComponent implements OnInit {
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }

@@ -1,22 +1,23 @@
 <div class="content-container">
-  <div class="language-switcher">
-    <button 
-      [class.active]="currentLang === 'de'" 
-      (click)="switchLanguage('de')">
-      DE
-    </button>
-    <span>|</span>
-    <button 
-      [class.active]="currentLang === 'en'" 
-      (click)="switchLanguage('en')">
-      EN
-    </button>
-  </div>
-
-  <div *ngIf="currentLang === 'de'" class="content-de">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/gesellschaftsrecht.jpg" alt="Gesellschaftsrecht" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
     <h1>Gesellschaftsrecht</h1>
     <p>Gesellschaftsgründungen und die Wahl der richtigen Rechtsform stehen am Beginn jedes Unternehmens. Darüber hinaus bedarf es auch im täglichen Geschäft einer fundierten rechtlichen Beratung und Begleitung. Wir unterstützen Sie gerne bei der Setzung des richtigen Fundaments für Ihre unternehmerische Tätigkeit sowie bei der fortlaufenden gesellschaftsrechtlichen Umsetzung.</p>
-    
+
     <h2>Unsere Leistungen im Überblick:</h2>
     <ul>
       <li>Rechtsformwahl und Gründungen von Kapital- und Personengesellschaften</li>
@@ -36,10 +37,10 @@
     </ul>
   </div>
 
-  <div *ngIf="currentLang === 'en'" class="content-en">
+      <div *ngIf="currentLang === 'en'" class="content-en">
     <h1>Corporate Law</h1>
     <p>Company formations and the choice of the right legal form are at the beginning of every business. In addition, sound legal advice and support is also required in day-to-day business. We would be pleased to assist you in laying the right foundation for your business activities and in the ongoing implementation of corporate law.</p>
-    
+
     <h2>Our services at a glance:</h2>
     <ul>
       <li>Choice of legal form and formation of corporations and partnerships</li>
@@ -56,6 +57,8 @@
       <li>Conflict resolution</li>
       <li>Contentious corporate law</li>
       <li>Liquidations</li>
-    </ul>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
