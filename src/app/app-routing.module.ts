@@ -12,6 +12,7 @@ import { GargerComponent } from './team/garger/garger.component';
 import { SpallingerComponent } from './team/spallinger/spallinger.component';
 import { ReiterComponent } from './team/reiter/reiter.component';
 import { RoupecComponent } from './team/roupec/roupec.component';
+import { GesellschaftsrechtComponent } from './gesellschaftsrecht/gesellschaftsrecht.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'impressum', component: ImpressumComponent },
   { path: 'haftungsausschluss', component: HaftungsausschlussComponent },
   { path: 'datenschutz', component: DatenschutzComponent },
+  { path: 'gesellschaftsrecht', component: GesellschaftsrechtComponent },
 ];
 
 @NgModule({

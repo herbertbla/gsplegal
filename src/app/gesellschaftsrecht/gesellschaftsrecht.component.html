@@ -1,0 +1,61 @@
+<div class="content-container">
+  <div class="language-switcher">
+    <button 
+      [class.active]="currentLang === 'de'" 
+      (click)="switchLanguage('de')">
+      DE
+    </button>
+    <span>|</span>
+    <button 
+      [class.active]="currentLang === 'en'" 
+      (click)="switchLanguage('en')">
+      EN
+    </button>
+  </div>
+
+  <div *ngIf="currentLang === 'de'" class="content-de">
+    <h1>Gesellschaftsrecht</h1>
+    <p>Gesellschaftsgründungen und die Wahl der richtigen Rechtsform stehen am Beginn jedes Unternehmens. Darüber hinaus bedarf es auch im täglichen Geschäft einer fundierten rechtlichen Beratung und Begleitung. Wir unterstützen Sie gerne bei der Setzung des richtigen Fundaments für Ihre unternehmerische Tätigkeit sowie bei der fortlaufenden gesellschaftsrechtlichen Umsetzung.</p>
+    
+    <h2>Unsere Leistungen im Überblick:</h2>
+    <ul>
+      <li>Rechtsformwahl und Gründungen von Kapital- und Personengesellschaften</li>
+      <li>Ausarbeitung Gesellschaftsverträge und Satzungen</li>
+      <li>Gesellschafter- / Geschäftsführerwechsel</li>
+      <li>Sitzverlegungen</li>
+      <li>Kapitalmaßnahmen</li>
+      <li>Vorbereitung von General- und Hauptversammlungen</li>
+      <li>Ausarbeitung Syndikatsverträge</li>
+      <li>Beratung von Gesellschaftsorganen</li>
+      <li>Strategische Unterstützung von Minderheitsgesellschaftern</li>
+      <li>Gesellschaftsrechtliche Nachfolgeregelungen</li>
+      <li>Restrukturierung von Kapital- und Personengesellschaften</li>
+      <li>Konfliktlösung</li>
+      <li>Streitiges Gesellschaftsrecht</li>
+      <li>Liquidationen</li>
+    </ul>
+  </div>
+
+  <div *ngIf="currentLang === 'en'" class="content-en">
+    <h1>Corporate Law</h1>
+    <p>Company formations and the choice of the right legal form are at the beginning of every business. In addition, sound legal advice and support is also required in day-to-day business. We would be pleased to assist you in laying the right foundation for your business activities and in the ongoing implementation of corporate law.</p>
+    
+    <h2>Our services at a glance:</h2>
+    <ul>
+      <li>Choice of legal form and formation of corporations and partnerships</li>
+      <li>Drafting of partnership agreements and articles of association</li>
+      <li>Changes in shareholders/managing directors</li>
+      <li>Relocations of registered office</li>
+      <li>Capital measures</li>
+      <li>Preparation of general and annual general meetings</li>
+      <li>Drafting of syndicate agreements</li>
+      <li>Advising corporate bodies</li>
+      <li>Strategic support for minority shareholders</li>
+      <li>Corporate succession arrangements</li>
+      <li>Restructuring of corporations and partnerships</li>
+      <li>Conflict resolution</li>
+      <li>Contentious corporate law</li>
+      <li>Liquidations</li>
+    </ul>
+  </div>
+</div>

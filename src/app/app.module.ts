@@ -18,6 +18,7 @@ import { GargerComponent } from './team/garger/garger.component';
 import { SpallingerComponent } from './team/spallinger/spallinger.component';
 import { ReiterComponent } from './team/reiter/reiter.component';
 import { RoupecComponent } from './team/roupec/roupec.component';
+import { GesellschaftsrechtComponent } from './gesellschaftsrecht/gesellschaftsrecht.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GargerComponent,
     SpallingerComponent,
     ReiterComponent,
-    RoupecComponent
+    RoupecComponent,
+    GesellschaftsrechtComponent
   ],
   imports: [
     BrowserModule,
