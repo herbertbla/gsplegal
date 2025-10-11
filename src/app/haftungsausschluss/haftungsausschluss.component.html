@@ -1,24 +1,48 @@
 <!-- Header -->
-<div class=" gsphomeheader">
+<div class="gspimpressumheader">
   <div class="container gsptextinimage">
     <div class="row">
-      <div class="col-md-1"></div>
       <div class="col-md-8">
-        <img  class="gspheaderimage" src="../../assets/images/gs_logo_subseiten.png.png">
+        <img class="gspheaderimage" src="../../assets/images/gs_logo_subseiten.png" alt="GSP Legal Logo">
       </div>
     </div>
   </div>
 </div>
 
-<!-- /.container -->
-<div class="gspparagraph">
+<!-- Content -->
+<div class="haftungsausschluss-container">
   <div class="container">
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-8">
-        <p class="gsptitlefont">{{'HAFTUNGSAUSSCHLUSS' | translate | uppercase}} </p>
-        <p>{{'HAFTP1' | translate}}</p>
-        <p>{{'HAFTP2' | translate}}</p>
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <!-- German Version -->
+        <div class="content-de" *ngIf="currentLang === 'de'">
+          <h1>Haftungsausschluss</h1>
+
+          <div class="disclaimer-text">
+            <p>Die auf dieser Website zur Verfügung gestellten Informationen und Inhalte stellen keine Rechtsauskunft dar und ersetzen jedenfalls keine fundierte rechtliche Beratung im Einzelfall.</p>
+
+            <p>Die Verwendung der auf dieser Website gespeicherten Inhalte bedarf der vorherigen Zustimmung von GARGER SPALLINGER Rechtsanwälte GmbH. Wir weisen darauf hin, dass Informationen auf dieser Website technische Ungenauigkeiten oder typografische Fehler enthalten können.</p>
+
+            <p>Wir behalten uns vor, die Informationen auf dieser Website jederzeit und ohne vorherige Ankündigung zu ändern oder zu aktualisieren. Alle auf unserer Website veröffentlichten Inhalte wie z.B. Texte, Dateien, Kompositionen und Bilder sind rechtlich geschützt. Jede weitere Veröffentlichung, Vervielfältigung, Verbreitung oder sonstige Nutzung - auch auszugsweise - bedarf der schriftlichen Genehmigung von GARGER SPALLINGER Rechtsanwälte GmbH.</p>
+
+            <p>GARGER SPALLINGER Rechtsanwälte GmbH übernimmt keine Haftung für die Inhalte der auf dieser Website über Hyperlinks zugänglichen Websites Dritter.</p>
+          </div>
+        </div>
+
+        <!-- English Version -->
+        <div class="content-en" *ngIf="currentLang === 'en'">
+          <h1>Disclaimer</h1>
+
+          <div class="disclaimer-text">
+            <p>The information and content provided on this website does not constitute legal advice and in no way replaces comprehensive legal advice in individual cases.</p>
+
+            <p>The use of content stored on this website requires prior consent from GARGER SPALLINGER Rechtsanwälte GmbH. We would like to point out that the information on this website may contain technical inaccuracies or typographical errors.</p>
+
+            <p>We reserve the right to change or update the information on this website at any time without prior notice. All content published on our website, such as texts, files, compositions, and images, is legally protected. Any further publication, reproduction, distribution, or other use - even in part - requires the written approval of GARGER SPALLINGER Rechtsanwälte GmbH.</p>
+
+            <p>GARGER SPALLINGER Rechtsanwälte GmbH assumes no liability for the content of third-party websites accessible via hyperlinks on this website.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
