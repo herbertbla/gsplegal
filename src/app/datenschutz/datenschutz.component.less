@@ -1,10 +1,198 @@
 @import "../app.component.less";
 
-.gsphomeheader {
+// Header with background image
+.gspimpressumheader {
   height: 450px;
-  background-image: url("../../assets/images/header/header_home.jpg");
+  background-image: url("../../assets/images/plan_kontakt.jpg");
   background-position: center center;
   background-size: cover;
   overflow: hidden;
   padding-top: 30px;
+  animation: fadeIn 2s ease forwards;
+  background-attachment: fixed; // Parallax effect
+  margin-bottom: 40px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 767.98px) {
+    height: 350px;
+    background-attachment: scroll;
+  }
+}
+
+// Main content container
+.datenschutz-container {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  font-family: 'Open Sans', Arial, sans-serif;
+
+  h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin: 2rem 0 1.5rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  h2 {
+    color: #3a5169;
+    font-size: 1.6rem;
+    margin: 2.5rem 0 1.2rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    color: #4a6b8a;
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+  }
+
+  p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+
+    &:last-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  address {
+    font-style: normal;
+    margin: 1.5rem 0;
+    line-height: 1.7;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 4px;
+  }
+
+  .contact-info {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 1.2rem;
+    margin: 1.2rem 0;
+
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #2c3e50;
+        font-weight: bold;
+      }
+    }
+  }
+
+  a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: #1a73e8;
+      border-bottom-color: #1a73e8;
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 991.98px) {
+    font-size: 0.95rem;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 0.9rem;
+    padding: 0 1.2rem;
+
+    h1 {
+      font-size: 1.8rem;
+      margin: 1.5rem 0 1.2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.8rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    address {
+      padding: 1.2rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 0 1rem;
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// Animation for fade in effect
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
