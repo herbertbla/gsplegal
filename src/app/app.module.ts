@@ -23,6 +23,7 @@ import { UmgruendungenComponent } from './umgruendungen/umgruendungen.component'
 import { MergersAcquisitionsComponent } from './mergers-acquisitions/mergers-acquisitions.component';
 import { ArbeitsrechtComponent } from './arbeitsrecht/arbeitsrecht.component';
 import { GlobalMobilityComponent } from './global-mobility/global-mobility.component';
+import { BankingFinanceComponent } from './banking-finance/banking-finance.component';
 
 // AoT-kompatibler Translate Loader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -48,7 +49,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     UmgruendungenComponent,
     MergersAcquisitionsComponent,
     ArbeitsrechtComponent,
-    GlobalMobilityComponent
+    GlobalMobilityComponent,
+    BankingFinanceComponent
   ],
   imports: [
     BrowserModule,

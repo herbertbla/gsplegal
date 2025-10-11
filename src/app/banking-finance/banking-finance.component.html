@@ -1,0 +1,54 @@
+<div class="content-container">
+  <div class="row">
+    <!-- Image Column - Hidden on mobile -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="mb-4">
+        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
+          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
+        </a>
+      </div>
+      <div class="sidebar-image">
+        <img src="assets/images/klein/banken.jpg" alt="Banking & Finance" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Content Column -->
+    <div class="col-12 col-md-8">
+      <div *ngIf="currentLang === 'de'" class="content-de">
+        <h1>Banken-, Finanz- und Kapitalmarktrecht</h1>
+        <p>Eine fundierte und rechtssichere Finanzierung von Unternehmen spielt eine entscheidende Rolle für deren Erfolg, sei es in Form von Kapitalerhöhungen, Kredit- und Mezzaninfinanzierungen oder aber auch im Rahmen eines Crowdfunding-Projekts. Durch unsere rechtliche, aber auch betriebswirtschaftliche Expertise bieten wir Ihnen die nötige Unterstützung nicht nur in Sachen Finanzierung, sondern auch bei Börsengängen und allgemein bei einschlägigen Vertragsgestaltungen.</p>
+
+        <h2>Unsere Leistungen im Überblick:</h2>
+        <ul>
+          <li>Bankvertragsrecht</li>
+          <li>Beratung und Vertretung von Banken und Finanzdienstleistern gegenüber den Aufsichtsbehörden</li>
+          <li>Unterstützung bei der Erfüllung einschlägiger Transparenzvorschriften</li>
+          <li>Durchführung von Eigentümerkontroll-Verfahren</li>
+          <li>Beratung bei Finanzierungen</li>
+          <li>Vertretung von Minderheitsgesellschaftern (als gemeinsamer Vertreter) bei aktienrechtlichen Überprüfungsverfahren (Verschmelzung, Gesellschafterausschluss)</li>
+          <li>Beratung bei Kapitalmarkttransaktionen</li>
+          <li>Beratung zu kapitalmarktrechtlichen Compliance-Themen</li>
+          <li>Beratung zu kapitalmarktrechtlichen Publizitätspflichten</li>
+        </ul>
+      </div>
+
+      <div *ngIf="currentLang === 'en'" class="content-en">
+        <h1>Banking, Finance and Capital Markets Law</h1>
+        <p>A well-founded and legally secure financing structure plays a crucial role in the success of companies, whether in the form of capital increases, credit and mezzanine financing, or as part of a crowdfunding project. With our legal and business expertise, we provide you with the necessary support not only in financing matters but also in IPOs and general contract design.</p>
+
+        <h2>Our services at a glance:</h2>
+        <ul>
+          <li>Banking contract law</li>
+          <li>Advice and representation of banks and financial service providers vis-à-vis supervisory authorities</li>
+          <li>Support in fulfilling relevant transparency requirements</li>
+          <li>Conducting owner control procedures</li>
+          <li>Consulting on financing matters</li>
+          <li>Representation of minority shareholders (as joint representative) in corporate law review procedures (merger, squeeze-out)</li>
+          <li>Advice on capital market transactions</li>
+          <li>Consulting on capital market compliance issues</li>
+          <li>Advice on capital market disclosure requirements</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
