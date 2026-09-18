@@ -14,6 +14,7 @@
 
 .gsptaetigkeitcontainer {
   position: relative;
+  width: 100%;
   text-align: center;
   color: white;
   cursor: pointer;
@@ -25,7 +26,32 @@
 }
 
 .gsp-taetigkeit-grid {
-  --bs-gutter-x: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  max-width: 1172px;
+  margin: 0 auto;
+
+  > .gspcolimagecenter {
+    flex: 0 1 220px;
+    width: 220px;
+    max-width: 220px;
+    padding: 0;
+  }
+
+  .gspcardimage {
+    display: block;
+    width: 100%;
+    max-height: none;
+    height: auto;
+  }
+}
+
+.gsp-taetigkeit-tagline {
+  flex: 0 0 100%;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .gsptaetigkeitbottomcentered {
