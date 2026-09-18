@@ -28,15 +28,15 @@
 .gsp-taetigkeit-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
-  max-width: 1346px;
+  max-width: 1192px;
   margin: 0 auto;
 
   > .gspcolimagecenter {
-    flex: 0 1 250px;
-    width: 250px;
-    max-width: 250px;
+    flex: 0 1 218px;
+    width: 218px;
+    max-width: 218px;
     padding: 0;
   }
 
@@ -73,6 +73,10 @@
 }
 
 @media (max-width: 767.98px) {
+  .gsp-taetigkeit-grid {
+    justify-content: center;
+  }
+
   .gsptateigkeitsbereichheader {
     height: 320px;
     padding-top: 12px;

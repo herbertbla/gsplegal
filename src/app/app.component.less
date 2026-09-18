@@ -9,6 +9,8 @@
 
 .gsp-main-content {
   flex: 1 0 auto;
+  margin-right: 1vw;
+  margin-left: 1vw;
 }
 
 .panel-footer {
@@ -21,6 +23,29 @@
   address {
     margin-bottom: 0;
     line-height: inherit;
+  }
+}
+
+.gsp-footer-content {
+  max-width: 1192px;
+  padding-right: 0;
+  padding-left: 0;
+
+  > .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .gsp-footer-contact,
+  .gsp-footer-links {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gsp-footer-links {
+    margin-top: 0.5rem;
   }
 }
 
