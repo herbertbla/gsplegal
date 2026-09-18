@@ -67,6 +67,21 @@ router-outlet + * li {
   }
 }
 
+@media (orientation: landscape) and (max-width: 1199.98px) {
+  router-outlet + * .gsp-hero-inner,
+  router-outlet + * .gsp-home-text,
+  router-outlet + * .gsp-contact-content,
+  router-outlet + * .content-container,
+  router-outlet + * .impressum-container,
+  router-outlet + * .haftungsausschluss-container,
+  router-outlet + * .datenschutz-container,
+  router-outlet + * .team-content > .container {
+    box-sizing: border-box;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+}
+
 .gsp-back-button {
   position: relative;
   display: inline-flex;
