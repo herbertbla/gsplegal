@@ -10,7 +10,7 @@
 </div>
 
 <!-- Page Content -->
-<div class="gsp-home-tiles">
+<div class="gsp-home-tiles gsp-page-content">
   <div class="row gsp-home-grid">
     <!-- Team -->
     <div class="col-xl-3 col-md-3 gspcolimagecenter">
@@ -70,22 +70,12 @@
   <!-- /.container -->
 </div>
 <div class="gspparagraph gspparagraphBGColor gsp-page-content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-8">
-        <p class="gsphometitlefont">{{'HOMEHEAD' | translate}} </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-9">
-        <p [innerHTML] = "'HOMEP1' | translate"> </p>
-        <p [innerHTML] = "'HOMEP2' | translate"> </p>
-        <p [innerHTML] = "'HOMEP3' | translate"> </p>
-        <p [innerHTML] = "'HOMEP4' | translate"> </p>
-        <p [innerHTML] = "'HOMEP5' | translate"> </p>
-      </div>
-    </div>
+  <div class="gsp-home-text">
+    <p class="gsphometitlefont">{{'HOMEHEAD' | translate}} </p>
+    <p [innerHTML] = "'HOMEP1' | translate"> </p>
+    <p [innerHTML] = "'HOMEP2' | translate"> </p>
+    <p [innerHTML] = "'HOMEP3' | translate"> </p>
+    <p [innerHTML] = "'HOMEP4' | translate"> </p>
+    <p [innerHTML] = "'HOMEP5' | translate"> </p>
   </div>
 </div>
