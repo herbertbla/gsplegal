@@ -1,11 +1,10 @@
 <!-- Header -->
 <div class="gspimpressumheader gsp-page-header">
-  <div class="container gsptextinimage_pos">
-    <div class="row">
-      <div class="col-md-8">
-        <img class="gspheaderimage" src="assets/images/gs_logo_subseiten.png" alt="GSP Legal Logo">
-      </div>
-      <div class="col-md-2"></div>
+  <div class="gsp-hero-inner">
+    <img class="gsp-hero-logo" src="assets/images/gs_logo_home_kontakt.png" alt="GSP Legal Logo">
+    <div class="gsp-hero-copy">
+      <h1>{{'DATENSCHUTZ' | translate | uppercase}}</h1>
+      <p>{{'PRIVACY_HERO' | translate}}</p>
     </div>
   </div>
 </div>
@@ -17,8 +16,6 @@
       <div class="col-12 col-lg-10 offset-lg-1">
         <!-- German Version -->
         <div class="content-de" *ngIf="currentLang === 'de'">
-          <h1>Information zum Datenschutz und zur Datenverarbeitung</h1>
-
           <div class="section">
             <h2>1. Personenbezogene Daten</h2>
             <p>GARGER SPALLINGER Rechtsanwälte GmbH, FN 325373s, Biberstraße 22, A-1010 Wien, erhebt, verarbeitet und nutzt als Verantwortlicher personenbezogene Daten nur wenn eine rechtliche Grundlage im Einklang mit der DSGVO vorliegt; dies unter Einhaltung der datenschutz- und zivilrechtlichen Bestimmungen.</p>
@@ -91,8 +88,6 @@
 
         <!-- English Version -->
         <div class="content-en" *ngIf="currentLang === 'en'">
-          <h1>Information on Data Protection and Data Processing</h1>
-
           <div class="section">
             <h2>1. Personal Data</h2>
             <p>GARGER SPALLINGER Rechtsanwälte GmbH, FN 325373s, Biberstraße 22, A-1010 Vienna, collects, processes and uses personal data as the controller only if there is a legal basis in accordance with the GDPR; this in compliance with data protection and civil law provisions.</p>

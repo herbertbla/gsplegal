@@ -1,11 +1,10 @@
 <!-- Header -->
 <div class="gspimpressumheader gsp-page-header">
-  <div class="container gsptextinimage_pos">
-    <div class="row">
-      <div class="col-md-8">
-        <img class="gspheaderimage" src="../../assets/images/gs_logo_subseiten.png" alt="GSP Legal Logo">
-      </div>
-      <div class="col-md-2"></div>
+  <div class="gsp-hero-inner">
+    <img class="gsp-hero-logo" src="../../assets/images/gs_logo_home_kontakt.png" alt="GSP Legal Logo">
+    <div class="gsp-hero-copy">
+      <h1>{{'IMPRESSUM' | translate | uppercase}}</h1>
+      <p>{{'IMPP1' | translate}}</p>
     </div>
   </div>
 </div>
@@ -17,8 +16,6 @@
       <div class="col-12 col-lg-10 offset-lg-1">
         <!-- German Version -->
         <div *ngIf="currentLang === 'de'" class="content-de">
-          <h1>Impressum</h1>
-
           <div class="impressum-summary">
             <section class="impressum-card">
               <h2>GARGER SPALLINGER Rechtsanwälte GmbH</h2>
@@ -75,8 +72,6 @@
 
         <!-- English Version -->
         <div *ngIf="currentLang === 'en'" class="content-en">
-          <h1>Legal Notice</h1>
-
           <div class="impressum-summary">
             <section class="impressum-card">
               <h2>GARGER SPALLINGER Rechtsanwälte GmbH</h2>
