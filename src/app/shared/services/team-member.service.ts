@@ -16,8 +16,8 @@ export class TeamMemberService {
       positionEn: 'Attorney-at-Law, Partner',
       imageUrl: 'assets/images/bgarger.jpg',
       email: 'bgarger@gsplegal.at',
-      phone: '+43 1 319 94 70',
-      fax: '+43 1 319 94 70-70',
+      phone: '+43-1-319 94 70',
+      fax: '+43-1-319 94 70-70',
       expertise: [
         'Unternehmens- und Gesellschaftsrecht',
         'Umgründungen und Umstrukturierungen',
@@ -68,8 +68,8 @@ export class TeamMemberService {
       positionEn: 'Attorney-at-Law, Partner',
       imageUrl: 'assets/images/spallinger.jpg',
       email: 'spallinger@gsplegal.at',
-      phone: '+43 1 319 94 70',
-      fax: '+43 1 319 94 70-70',
+      phone: '+43-1-319 94 70',
+      fax: '+43-1-319 94 70-70',
       expertise: [
         'Unternehmens- und Gesellschaftsrecht',
         'Umgründungen und Umstrukturierungen',
@@ -122,8 +122,8 @@ export class TeamMemberService {
       positionEn: 'Attorney-at-Law, Partner',
       imageUrl: 'assets/images/drichter.jpg',
       email: 'dreiter@gsplegal.at',
-      phone: '+43 1 319 94 70',
-      fax: '+43 1 319 94 70-70',
+      phone: '+43-1-319 94 70',
+      fax: '+43-1-319 94 70-70',
       expertise: [
         'Unternehmens- und Gesellschaftsrecht',
         'Umgründungen und Umstrukturierungen',
@@ -168,8 +168,8 @@ export class TeamMemberService {
       positionEn: 'Attorney-at-Law',
       imageUrl: 'assets/images/roupec.jpg',
       email: 'aroupec@gsplegal.at',
-      phone: '+43 1 319 94 70',
-      fax: '+43 1 319 94 70-70',
+      phone: '+43-1-319 94 70',
+      fax: '+43-1-319 94 70-70',
       expertise: [
         'xxx'
       ],

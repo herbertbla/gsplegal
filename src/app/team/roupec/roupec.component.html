@@ -19,14 +19,16 @@
           <div class="text-start">
             <h5 class="mb-3 border-bottom pb-2">{{ currentLang === 'en' ? 'Contact' : 'Kontakt' }}</h5>
             <p *ngIf="member.email" class="mb-2">
-              <i class="bi bi-envelope me-2"></i>
+              <span class="contact-label">E-Mail:</span>
               <a [href]="'mailto:' + member.email" class="text-decoration-none">{{ member.email }}</a>
             </p>
             <p *ngIf="member.phone" class="mb-2">
-              <i class="bi bi-telephone me-2"></i> T <a [href]="'tel:' + member.phone">{{ member.phone }}</a>
+              <span class="contact-label">Tel:</span>
+              <a [href]="'tel:' + member.phone">{{ member.phone }}</a>
             </p>
             <p *ngIf="member.fax" class="mb-0">
-              <i class="bi bi-printer me-2"></i> F <a [href]="'tel:' + member.fax">{{ member.fax }}</a>
+              <span class="contact-label">Fax:</span>
+              <a [href]="'tel:' + member.fax">{{ member.fax }}</a>
             </p>
           </div>
         </div>
