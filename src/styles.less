@@ -45,6 +45,22 @@ router-outlet + * li {
   margin-bottom: 0.1rem;
 }
 
+.sidebar-image img {
+  animation: gspGraphicFadeIn 1.2s ease forwards;
+}
+
+@keyframes gspGraphicFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .gsp-back-button {
   position: relative;
   display: inline-flex;

@@ -21,8 +21,7 @@
     }
 
     .gspteambottomcentered {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.84);
       border-radius: 0 0 8px 8px;
     }
   }
@@ -150,14 +149,37 @@
 
 .gspteambottomcentered {
   position: absolute;
+  z-index: 2;
   width: 100%;
-  padding: 7px 5px;
+  padding: 7px 5px 8px;
   bottom:0px;
-  background-color: rgb(97,96,85);
-  opacity: 0.7;
+  background-color: rgba(57, 57, 51, 0.86);
   color: white;
-  font-size: 0.78rem;
-  line-height: 1.25;
+  line-height: 1.15;
+}
+
+.team-person-title,
+.team-person-name,
+.team-person-role {
+  display: block;
+}
+
+.team-person-title {
+  margin-bottom: 1px;
+  font-size: 0.68rem;
+}
+
+.team-person-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.team-person-role {
+  margin-top: 2px;
+  font-size: 0.67rem;
 }
 
 @media (max-width: 767.98px) {
