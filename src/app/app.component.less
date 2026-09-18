@@ -1,15 +1,35 @@
 
+.gsptextfont {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+
+.gsp-main-content {
+  flex: 1 0 auto;
+}
+
+.panel-footer {
+  flex-shrink: 0;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+
+  address {
+    margin-bottom: 0;
+    line-height: inherit;
+  }
+}
+
 .gsptitlefont {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
   color: rgb(0,68,57);
 }
 
-
-.gsptextfont {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: black;
-}
 
 /* DRAFT WATERMARK */
 :host::before {
