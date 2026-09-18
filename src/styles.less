@@ -61,6 +61,12 @@ router-outlet + * li {
   }
 }
 
+@media (min-width: 768px) {
+  .content-container > .row > .col-md-4.d-none.d-md-block + .col-12.col-md-8 {
+    padding-top: 4.5rem;
+  }
+}
+
 .gsp-back-button {
   position: relative;
   display: inline-flex;
