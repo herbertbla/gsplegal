@@ -12,30 +12,15 @@
 }
 
 .gspanfahrt {
-  height: 28vw;
-  min-height: 220px;
-  /* Location of the image */
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: top center;
-
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-
-  /* Background image is fixed in the viewport so that it doesn't move when
-     the content's height is greater than the image's height */
-
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-image: url("../../assets/images/plan_kontakt.jpg");;
-  overflow: auto;
-  background-size: 100%;
-  padding-top: 20px;
+  display: block;
+  width: 100%;
+  height: auto;
   animation: fadeIn 2s ease forwards;
-  background-attachment: fixed; /* Parallax */
+}
+
+.gsp-location-map {
+  padding-bottom: 28px;
+  background-color: rgb(255, 255, 255);
 }
 
 @media (max-width: 767.98px) {
@@ -45,11 +30,6 @@
     background-attachment: scroll;
   }
 
-  .gspanfahrt {
-    height: 240px;
-    min-height: 0;
-    background-attachment: scroll;
-  }
 }
 
 .gspkontaktemail {
