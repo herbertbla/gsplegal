@@ -18,53 +18,57 @@
         <div *ngIf="currentLang === 'de'" class="content-de">
           <h1>Impressum</h1>
 
-          <h2>GARGER SPALLINGER Rechtsanwälte GmbH</h2>
-          <address>
-            Biberstraße 22<br>
-            A-1010 Wien
-          </address>
+          <div class="impressum-summary">
+            <section class="impressum-card">
+              <h2>GARGER SPALLINGER Rechtsanwälte GmbH</h2>
+              <address>
+                Biberstraße 22<br>
+                A-1010 Wien
+              </address>
+              <div class="contact-info">
+                <p>{{ 'PHONE_LABEL' | translate }} <a href="tel:+4313199470">+43-1-319 94 70</a></p>
+                <p>Fax: <a href="tel:+431319947070">+43-1-319 94 70-70</a></p>
+                <p>Email: <a [href]="'mailto:office@gsplegal.at'" [textContent]="'office@gsplegal.at'"></a></p>
+                <p>Website: <a href="https://www.gsplegal.at/" target="_blank">gsplegal.at</a></p>
+              </div>
+            </section>
 
-          <div class="contact-info">
-            <p>{{ 'PHONE_LABEL' | translate }} <a href="tel:+4313199470">+43-1-319 94 70</a></p>
-            <p>Fax: <a href="tel:+431319947070">+43-1-319 94 70-70</a></p>
-            <p>Email: <a [href]="'mailto:office@gsplegal.at'" [textContent]="'office@gsplegal.at'"></a></p>
-            <p>Website: <a href="https://www.gsplegal.at/" target="_blank">https://www.gsplegal.at/</a></p>
+            <section class="impressum-card company-details">
+              <h3>Unternehmensdaten</h3>
+              <p>Firmenbuchnummer: 325373s</p>
+              <p>Firmenbuchgericht: Handelsgericht Wien</p>
+              <p>UID-Nummer: ATU 64902289</p>
+              <h3>Geschäftsführende Gesellschafter</h3>
+              <ul>
+                <li>MMag. Dr. Bernhard Garger</li>
+                <li>MMag. Forrest Spallinger, LL.M.</li>
+                <li>Dr. Daniel Reiter</li>
+              </ul>
+            </section>
           </div>
 
-          <div class="company-details">
-            <p>Firmenbuchnummer: 325373s</p>
-            <p>Firmenbuchgericht: Handelsgericht Wien</p>
-            <p>UID-Nummer: ATU 64902289</p>
-          </div>
-
-          <div class="managing-partners">
-            <p>Geschäftsführende Gesellschafter:</p>
-            <ul>
-              <li>MMag. Dr. Bernhard Garger</li>
-              <li>MMag. Forrest Spallinger, LL.M.</li>
-              <li>Dr. Daniel Reiter</li>
-            </ul>
-          </div>
-
-          <div class="legal-info">
+          <section class="legal-info">
+            <h3>Berufsrechtliche Informationen</h3>
             <p>Zuständige Kammer: Rechtsanwaltskammer Wien</p>
             <p>GARGER SPALLINGER Rechtsanwälte GmbH ist eine Gesellschaft mit beschränkter Haftung nach österreichischem Recht. Gegenstand des Unternehmens der Gesellschaft ist die Ausübung der Rechtsanwaltschaft (einschließlich erforderlicher Hilfstätigkeiten). Die Gesellschaft unterliegt dem einschlägigen Standesrecht, insbesondere der Rechtsanwaltsordnung, abrufbar unter <a href="https://www.oerak.at" target="_blank">https://www.oerak.at</a>.</p>
-          </div>
+          </section>
 
-          <div class="design-credits">
-            <h3>Design Website:</h3>
-            <p>Claudia Marschall</p>
-            <p>Email: <a [href]="'mailto:office@claudiamarschall.at'" [textContent]="'office@claudiamarschall.at'"></a></p>
-            <p>Website: <a href="http://www.claudiamarschall.at" target="_blank">http://www.claudiamarschall.at</a></p>
-          </div>
+          <div class="credits-grid">
+            <section class="design-credits">
+              <h3>Website-Design</h3>
+              <p>Claudia Marschall</p>
+              <p>Email: <a [href]="'mailto:office@claudiamarschall.at'" [textContent]="'office@claudiamarschall.at'"></a></p>
+              <p>Website: <a href="http://www.claudiamarschall.at" target="_blank">claudiamarschall.at</a></p>
+            </section>
 
-          <div class="image-credits">
-            <h3>Bildnachweise:</h3>
-            <ul>
-              <li>'Haftungsausschluss': photocase.com©JOEXX</li>
-              <li>'Impressum': photocase.com©larrag01</li>
-              <li>'Anfahrt': photocase.com©kallejipp</li>
-            </ul>
+            <section class="image-credits">
+              <h3>Bildnachweise</h3>
+              <ul>
+                <li>Haftungsausschluss: photocase.com©JOEXX</li>
+                <li>Impressum: photocase.com©larrag01</li>
+                <li>Anfahrt: photocase.com©kallejipp</li>
+              </ul>
+            </section>
           </div>
         </div>
 
@@ -72,53 +76,57 @@
         <div *ngIf="currentLang === 'en'" class="content-en">
           <h1>Legal Notice</h1>
 
-          <h2>GARGER SPALLINGER Rechtsanwälte GmbH</h2>
-          <address>
-            Biberstraße 22<br>
-            A-1010 Vienna, Austria
-          </address>
+          <div class="impressum-summary">
+            <section class="impressum-card">
+              <h2>GARGER SPALLINGER Rechtsanwälte GmbH</h2>
+              <address>
+                Biberstraße 22<br>
+                A-1010 Vienna, Austria
+              </address>
+              <div class="contact-info">
+                <p>{{ 'PHONE_LABEL' | translate }} <a href="tel:+4313199470">+43-1-319 94 70</a></p>
+                <p>Fax: <a href="tel:+431319947070">+43-1-319 94 70-70</a></p>
+                <p>Email: <a [href]="'mailto:office@gsplegal.at'" [textContent]="'office@gsplegal.at'"></a></p>
+                <p>Website: <a href="https://www.gsplegal.at/" target="_blank">gsplegal.at</a></p>
+              </div>
+            </section>
 
-          <div class="contact-info">
-            <p>{{ 'PHONE_LABEL' | translate }} <a href="tel:+4313199470">+43-1-319 94 70</a></p>
-            <p>Fax: <a href="tel:+431319947070">+43-1-319 94 70-70</a></p>
-            <p>Email: <a [href]="'mailto:office@gsplegal.at'" [textContent]="'office@gsplegal.at'"></a></p>
-            <p>Website: <a href="https://www.gsplegal.at/" target="_blank">https://www.gsplegal.at/</a></p>
+            <section class="impressum-card company-details">
+              <h3>Company Details</h3>
+              <p>Company Register Number: 325373s</p>
+              <p>Commercial Court: Handelsgericht Wien (Vienna Commercial Court)</p>
+              <p>VAT ID: ATU 64902289</p>
+              <h3>Managing Partners</h3>
+              <ul>
+                <li>MMag. Dr. Bernhard Garger</li>
+                <li>MMag. Forrest Spallinger, LL.M.</li>
+                <li>Dr. Daniel Reiter</li>
+              </ul>
+            </section>
           </div>
 
-          <div class="company-details">
-            <p>Company Register Number: 325373s</p>
-            <p>Commercial Court: Handelsgericht Wien (Vienna Commercial Court)</p>
-            <p>VAT ID: ATU 64902289</p>
-          </div>
-
-          <div class="managing-partners">
-            <p>Managing Partners:</p>
-            <ul>
-              <li>MMag. Dr. Bernhard Garger</li>
-              <li>MMag. Forrest Spallinger, LL.M.</li>
-              <li>Dr. Daniel Reiter</li>
-            </ul>
-          </div>
-
-          <div class="legal-info">
+          <section class="legal-info">
+            <h3>Professional Information</h3>
             <p>Responsible Chamber: Rechtsanwaltskammer Wien (Vienna Bar Association)</p>
             <p>GARGER SPALLINGER Rechtsanwälte GmbH is a limited liability company under Austrian law. The company's purpose is the practice of law (including necessary ancillary activities). The company is subject to the relevant professional regulations, in particular the Rechtsanwaltsordnung (Austrian Lawyers' Code), available at <a href="https://www.oerak.at" target="_blank">https://www.oerak.at</a>.</p>
-          </div>
+          </section>
 
-          <div class="design-credits">
-            <h3>Website Design:</h3>
-            <p>Claudia Marschall</p>
-            <p>Email: <a [href]="'mailto:office@claudiamarschall.at'" [textContent]="'office@claudiamarschall.at'"></a></p>
-            <p>Website: <a href="http://www.claudiamarschall.at" target="_blank">http://www.claudiamarschall.at</a></p>
-          </div>
+          <div class="credits-grid">
+            <section class="design-credits">
+              <h3>Website Design</h3>
+              <p>Claudia Marschall</p>
+              <p>Email: <a [href]="'mailto:office@claudiamarschall.at'" [textContent]="'office@claudiamarschall.at'"></a></p>
+              <p>Website: <a href="http://www.claudiamarschall.at" target="_blank">claudiamarschall.at</a></p>
+            </section>
 
-          <div class="image-credits">
-            <h3>Image Credits:</h3>
-            <ul>
-              <li>'Disclaimer': photocase.com©JOEXX</li>
-              <li>'Legal Notice': photocase.com©larrag01</li>
-              <li>'Directions': photocase.com©kallejipp</li>
-            </ul>
+            <section class="image-credits">
+              <h3>Image Credits</h3>
+              <ul>
+                <li>Disclaimer: photocase.com©JOEXX</li>
+                <li>Legal Notice: photocase.com©larrag01</li>
+                <li>Directions: photocase.com©kallejipp</li>
+              </ul>
+            </section>
           </div>
         </div>
       </div>

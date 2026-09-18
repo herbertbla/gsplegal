@@ -57,54 +57,83 @@
 
   h1 {
     color: #2c3e50;
-    font-size: 2.2rem;
-    margin-bottom: 0.65rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.35rem;
     border-bottom: 2px solid #e0e0e0;
   }
 
   h2 {
     color: #3a5169;
-    font-size: 1.6rem;
-    margin: 0.9rem 0 0.4rem;
+    font-size: 1.35rem;
+    margin: 0 0 0.4rem;
     font-weight: 500;
   }
 
   h3 {
     color: #4a6b8a;
-    font-size: 1.3rem;
-    margin: 0.8rem 0 0.35rem;
+    font-size: 1.1rem;
+    margin: 0 0 0.35rem;
     font-weight: 500;
   }
 
   address {
     font-style: normal;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
     line-height: 1.45;
   }
 
+  .impressum-summary,
+  .credits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .impressum-card {
+    padding: 0.75rem 0.85rem;
+    border-left: 3px solid rgb(0, 68, 57);
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+
+  .company-details h3:not(:first-child) {
+    margin-top: 0.7rem;
+  }
+
   .contact-info,
-  .company-details,
-  .managing-partners,
+  .impressum-card,
   .legal-info,
   .design-credits,
   .image-credits {
-    margin-bottom: 0.8rem;
 
     p {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
     }
+  }
+
+  .legal-info {
+    margin-bottom: 0.75rem;
+    padding: 0.65rem 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .design-credits,
+  .image-credits {
+    padding: 0.2rem 0;
   }
 
   ul {
     list-style-type: none;
-    padding-left: 1.2rem;
-    margin: 0.25rem 0 0.6rem;
+    padding-left: 1rem;
+    margin: 0.2rem 0 0;
 
     li {
       position: relative;
-      padding-left: 1.5rem;
+      padding-left: 1rem;
       margin-bottom: 0.1rem;
 
       &::before {
@@ -148,6 +177,11 @@
   @media (max-width: 767.98px) {
     font-size: 0.9rem;
     padding: 0;
+
+    .impressum-summary,
+    .credits-grid {
+      grid-template-columns: 1fr;
+    }
 
     h1 {
       font-size: 1.8rem;
