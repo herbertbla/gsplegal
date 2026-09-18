@@ -1,12 +1,11 @@
 @import "../app.component.less";
 
 .gspteamheader {
-  height: 450px;
+  height: 360px;
   background-image: url("../../assets/images/header/header_team.jpg");
   background-position: center center;
   background-size: cover;
-  height: 450px;
-  padding-top: 30px;
+  padding-top: 20px;
   position: relative;
   animation: fadeIn 2s ease forwards;
   background-attachment: fixed;
@@ -33,17 +32,18 @@
       border-radius: 0 0 8px 8px;
     }
   }
-  animation: fadeIn 2s ease forwards;
-  background-attachment: fixed; /* Parallax */
 }
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(1.05); }
   to   { opacity: 1; transform: scale(1); }
 }
 .gspcardimagepartner {
-  width:100%;
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top center;
   animation: fadeIn 2s ease forwards;
-  background-attachment: fixed; /* Parallax */
 }
 .gspcardtextpartner {
   background-size: cover; /* <------ */
@@ -64,6 +64,38 @@
   color: white;
   width: 100%;
 }
+
+.team-content {
+  padding-top: 26px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+.team-section-title {
+  padding-top: 18px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  h2 {
+    margin-bottom: 4px;
+  }
+}
+
+.team-grid {
+  margin-top: 4px;
+}
+
+.team-column {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.team-card {
+  max-width: 220px;
+  margin: 0 auto;
+}
 .gspbottomleft {
   position: absolute;
   width: 100%;
@@ -80,7 +112,7 @@
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
   color: white;
-  padding-top: 30px;
+  padding-top: 18px;
 }
 
 
@@ -88,12 +120,37 @@
 .gspteambottomcentered {
   position: absolute;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 7px 5px;
   bottom:0px;
   background-color: rgb(97,96,85);
   opacity: 0.7;
   color: white;
+}
+
+@media (max-width: 767.98px) {
+  .gspteamheader {
+    height: 320px;
+    padding-top: 12px;
+    background-attachment: scroll;
+  }
+
+  .team-content {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .team-section-title {
+    padding-top: 14px;
+    text-align: center;
+  }
+
+  .team-card {
+    max-width: 210px;
+  }
+
+  .gspcardimagepartner {
+    height: 265px;
+  }
 }
 
 

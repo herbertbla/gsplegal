@@ -1,18 +1,19 @@
 @import "../app.component.less";
 
 .gsphomeheader {
-  height: 450px;
+  height: 360px;
   background-image: url("../../assets/images/header/header_kontakt.jpg");
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 20px;
   animation: fadeIn 2s ease forwards;
   background-attachment: fixed; /* Parallax */
 }
 
 .gspanfahrt {
-  height: 35vw;
+  height: 28vw;
+  min-height: 220px;
   /* Location of the image */
   /* Background image is centered vertically and horizontally at all times */
   background-position: top center;
@@ -32,9 +33,23 @@
   background-image: url("../../assets/images/plan_kontakt.jpg");;
   overflow: auto;
   background-size: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
   animation: fadeIn 2s ease forwards;
   background-attachment: fixed; /* Parallax */
+}
+
+@media (max-width: 767.98px) {
+  .gsphomeheader {
+    height: 320px;
+    padding-top: 12px;
+    background-attachment: scroll;
+  }
+
+  .gspanfahrt {
+    height: 240px;
+    min-height: 0;
+    background-attachment: scroll;
+  }
 }
 
 .gspkontaktemail {
