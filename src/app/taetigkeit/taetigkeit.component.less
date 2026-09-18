@@ -1,8 +1,17 @@
 @import "../app.component.less";
 
+:host {
+  display: block;
+  min-height: 100%;
+  background-color: rgb(242, 237, 234);
+}
+
 .gsptateigkeitsbereichheader {
   background-image: url("../../assets/images/header/header_taetigkeitsbereiche.jpg");
-  background-attachment: fixed; /* Parallax */
+  background-position: center center;
+  background-size: 100% 160%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 
@@ -28,9 +37,9 @@
   margin: 0 auto;
 
   > .gspcolimagecenter {
-    flex: 0 1 218px;
-    width: 218px;
-    max-width: 218px;
+    flex: 0 1 196px;
+    width: 196px;
+    max-width: 196px;
     padding: 0;
   }
 
