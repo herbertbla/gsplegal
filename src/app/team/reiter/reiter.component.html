@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="container mt-4 team-member-page">
   <button (click)="goBack()" class="btn btn-link mb-4 d-flex align-items-center">
     <i class="bi bi-arrow-left me-2"></i> {{ 'BACK' | translate }}
   </button>
@@ -6,7 +6,7 @@
   <div *ngIf="teamMember$ | async as member" class="row g-4">
     <!-- Left Column - Photo and Contact -->
     <div class="col-lg-4">
-      <div class="card border-0 shadow-sm h-100">
+      <div class="card border-0 shadow-sm">
         <div class="card-body text-center p-4">
           <img [src]="member.imageUrl" 
                [alt]="member.firstName + ' ' + member.lastName" 
@@ -34,9 +34,9 @@
     </div>
     
     <!-- Right Column - Details -->
-    <div class="col-lg-8">
+    <div class="col-lg-8 team-details-grid">
       <!-- Expertise Section -->
-      <div class="card border-0 shadow-sm mb-4">
+      <div class="card border-0 shadow-sm">
         <div class="card-body p-4">
           <h3 class="h5 fw-bold mb-3">{{ currentLang === 'en' ? 'Core areas of competence' : 'Beratungsschwerpunkte' }}</h3>
           <ul class="list-unstyled mb-0">
@@ -48,7 +48,7 @@
       </div>
       
       <!-- Languages Section -->
-      <div class="card border-0 shadow-sm mb-4">
+      <div class="card border-0 shadow-sm">
         <div class="card-body p-4">
           <h3 class="h5 fw-bold mb-3">{{ currentLang === 'en' ? 'Languages' : 'Sprachen' }}</h3>
           <ul class="list-unstyled mb-0">
@@ -60,7 +60,7 @@
       </div>
       
       <!-- Education Section -->
-      <div class="card border-0 shadow-sm mb-4">
+      <div class="card border-0 shadow-sm">
         <div class="card-body p-4">
           <h3 class="h5 fw-bold mb-3">{{ currentLang === 'en' ? 'Education' : 'Ausbildung' }}</h3>
           <ul class="list-unstyled">
