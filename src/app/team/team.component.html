@@ -1,31 +1,16 @@
 <!-- Header -->
-<div class="gspteamheader gsp-page-header">
-  <div class="container gsptextinimage_pos">
-    <div class="row">
-      <div class="col-md-8">
-        <img class="gspheaderimage" src="../../assets/images/gs_logo_subseiten.png" alt="GSP Legal Logo">
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-  </div>
-  <div class="container gsptextinimage">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-8">
-        <p class="gsptitlefontteam">{{'TEAM' | translate | uppercase}}</p>
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col-md-1"></div>
-      <div class="col-md-8 ">
-        <p  [innerHTML] = "'TEAMP1' | translate"> </p>
-        <p  [innerHTML] = "'TEAMP2' | translate"> </p>
-      </div>
+<div class="gspteamheader gsp-page-header gsp-page-header--light-text">
+  <div class="gsp-hero-inner">
+    <img class="gsp-hero-logo" src="../../assets/images/gs_logo_subseiten.png" alt="GSP Legal Logo">
+    <div class="gsp-hero-copy">
+      <h1>{{'TEAM' | translate | uppercase}}</h1>
+      <p [innerHTML]="'TEAMP1' | translate"></p>
     </div>
   </div>
 </div>
 <div class="gspparagraph team-content">
   <div class="container">
+    <div class="team-intro" [innerHTML]="'TEAMP2' | translate"></div>
     <div class="row team-section-title">
       <div class="col-md-1"><h2>{{'ANWAELTE' | translate }}</h2></div>
 

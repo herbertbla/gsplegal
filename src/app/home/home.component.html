@@ -1,11 +1,14 @@
 <!-- Header -->
 <div class="gsphomeheader gsp-page-header">
-  <div class="container gsptextinimage_pos">
-    <div class="row">
-      <div class="col-md-8">
-        <img class="gspheaderimage" src="../../assets/images/gs_logo_home_kontakt.png" alt="GSP Legal Logo">
+  <div class="gsp-hero-inner">
+    <img class="gsp-hero-logo" src="../../assets/images/gs_logo_home_kontakt.png" alt="GSP Legal Logo">
+    <div class="gsp-hero-copy">
+      <h1>{{'HOME_HERO_TITLE' | translate}}</h1>
+      <p [innerHTML]="'HOMEP1' | translate"></p>
+      <div class="gsp-hero-actions">
+        <a class="gsp-hero-action" routerLink="/taetigkeitsbereich">{{'CTA_AREAS' | translate}}</a>
+        <a class="gsp-hero-action gsp-hero-action--secondary" routerLink="/kontakt">{{'CTA_CONTACT' | translate}}</a>
       </div>
-      <div class="col-md-2"></div>
     </div>
   </div>
 </div>
@@ -72,8 +75,6 @@
 </div>
 <div class="gspparagraph gspparagraphBGColor gsp-page-content">
   <div class="gsp-home-text">
-    <p class="gsphometitlefont">{{'HOMEHEAD' | translate}} </p>
-    <p [innerHTML] = "'HOMEP1' | translate"> </p>
     <p [innerHTML] = "'HOMEP2' | translate"> </p>
     <p [innerHTML] = "'HOMEP3' | translate"> </p>
     <p [innerHTML] = "'HOMEP4' | translate"> </p>

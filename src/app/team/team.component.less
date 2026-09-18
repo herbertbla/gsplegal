@@ -1,13 +1,7 @@
 @import "../app.component.less";
 
 .gspteamheader {
-  height: 360px;
   background-image: url("../../assets/images/header/header_team.jpg");
-  background-position: center center;
-  background-size: cover;
-  padding-top: 20px;
-  position: relative;
-  animation: fadeIn 2s ease forwards;
   background-attachment: fixed;
 }
 
@@ -75,6 +69,12 @@
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+.team-intro {
+  max-width: 900px;
+  margin-bottom: 20px;
+  line-height: 1.45;
 }
 
 .team-section-title {
@@ -153,12 +153,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .gspteamheader {
-    height: 320px;
-    padding-top: 12px;
-    background-attachment: scroll;
-  }
-
   .team-content {
     padding-top: 20px;
     padding-bottom: 24px;
