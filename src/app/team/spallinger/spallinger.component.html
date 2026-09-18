@@ -24,7 +24,7 @@
               <a [href]="'mailto:' + member.email" class="text-decoration-none">{{ member.email }}</a>
             </p>
             <p *ngIf="member.phone" class="mb-2">
-              <span class="contact-label">Tel:</span>
+              <span class="contact-label">{{ 'PHONE_LABEL' | translate }}</span>
               <a [href]="'tel:' + member.phone">{{ member.phone }}</a>
             </p>
             <p *ngIf="member.fax" class="mb-0">
