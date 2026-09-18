@@ -3,9 +3,12 @@
     <!-- Image Column - Hidden on mobile -->
     <div class="col-md-4 d-none d-md-block">
       <div class="mb-4">
-        <a (click)="goBack()" class="text-decoration-none text-muted" style="cursor: pointer;">
-          <i class="bi bi-arrow-left"></i> {{ 'BACK' | translate }}
-        </a>
+        <button type="button" class="gsp-back-button" (click)="goBack()"
+                [attr.aria-label]="'BACK' | translate" [attr.data-tooltip]="'BACK' | translate">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
       </div>
       <div class="sidebar-image">
         <img src="assets/images/klein/banken.jpg" alt="Banking & Finance" class="img-fluid">

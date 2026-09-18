@@ -40,6 +40,65 @@ router-outlet + * li {
   margin-bottom: 0.1rem;
 }
 
+.gsp-back-button {
+  position: relative;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(0, 68, 57, 0.2);
+  border-radius: 50%;
+  background-color: rgb(242, 237, 234);
+  color: rgb(0, 68, 57);
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: calc(100% + 9px);
+    padding: 0.3rem 0.55rem;
+    border-radius: 4px;
+    background-color: rgb(44, 62, 80);
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-4px, -50%);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgb(0, 68, 57);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 68, 57, 0.2);
+    transform: translateY(-1px);
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
 @media (max-width: 767.98px) {
   .gsp-page-header img {
     max-width: 220px;

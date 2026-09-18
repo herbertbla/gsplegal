@@ -1,6 +1,9 @@
 <div class="container mt-4 team-member-page">
-  <button (click)="goBack()" class="btn btn-link mb-4 d-flex align-items-center">
-    <i class="bi bi-arrow-left me-2"></i> {{ 'BACK' | translate }}
+  <button type="button" class="gsp-back-button" (click)="goBack()"
+          [attr.aria-label]="'BACK' | translate" [attr.data-tooltip]="'BACK' | translate">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
   </button>
 
   <div *ngIf="teamMember$ | async as member" class="row g-4">
