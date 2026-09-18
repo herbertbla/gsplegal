@@ -26,13 +26,35 @@
 
 // Main content container
 .datenschutz-container {
-  max-width: 1200px;
+  max-width: 1192px;
   margin: 0 auto 2.5rem;
-  padding: 0 1rem;
+  padding: 0;
   font-size: 1rem;
   line-height: 1.45;
   color: #333;
   font-family: 'Open Sans', Arial, sans-serif;
+
+  > .container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .col-12 {
+    width: 100%;
+    margin-left: 0 !important;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .content-de,
+  .content-en {
+    max-width: 900px;
+  }
 
   h1 {
     color: #2c3e50;
@@ -125,7 +147,7 @@
   // Responsive adjustments
   @media (max-width: 991.98px) {
     font-size: 0.95rem;
-    padding: 0 2rem;
+    padding: 0;
 
     h1 {
       font-size: 2rem;
@@ -142,7 +164,7 @@
 
   @media (max-width: 767.98px) {
     font-size: 0.9rem;
-    padding: 0 1.2rem;
+    padding: 0;
 
     h1 {
       font-size: 1.8rem;
@@ -169,7 +191,7 @@
   }
 
   @media (max-width: 575.98px) {
-    padding: 0 1rem;
+    padding: 0;
 
     h1 {
       font-size: 1.6rem;
