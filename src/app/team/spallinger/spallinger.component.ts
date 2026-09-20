@@ -21,7 +21,7 @@ export class SpallingerComponent implements OnInit {
     private teamMemberService: TeamMemberService,
     private translate: TranslateService
   ) {
-    this.teamMember$ = this.teamMemberService.getTeamMemberById('stefan-spallinger');
+    this.teamMember$ = this.teamMemberService.getTeamMemberById('forrest-spallinger');
     this.currentLang = this.translate.currentLang || 'de';
   }
 
@@ -33,7 +33,7 @@ export class SpallingerComponent implements OnInit {
     this.translate.onLangChange.subscribe(event => {
       this.currentLang = event.lang;
       // Force change detection to update the view
-      this.teamMember$ = this.teamMemberService.getTeamMemberById('stefan-spallinger');
+      this.teamMember$ = this.teamMemberService.getTeamMemberById('forrest-spallinger');
     });
   }
 

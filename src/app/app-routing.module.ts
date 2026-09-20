@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'team', component: TeamComponent },
   { path: 'team/bernhard-garger', component: GargerComponent },
-  { path: 'team/stefan-spallinger', component: SpallingerComponent },
+  { path: 'team/forrest-spallinger', component: SpallingerComponent },
   { path: 'team/daniel-reiter', component: ReiterComponent },
   { path: 'team/anita-roupec', component: RoupecComponent },
   { path: 'taetigkeitsbereich', component: TaetigkeitComponent },

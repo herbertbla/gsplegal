@@ -60,9 +60,9 @@ export class TeamMemberService {
       ]
     },
     {
-      id: 'stefan-spallinger',
+      id: 'forrest-spallinger',
       title: 'MMag.',
-      firstName: 'STEFAN',
+      firstName: 'FORREST',
       lastName: 'SPALLINGER',
       position: 'Rechtsanwalt, Partner',
       positionEn: 'Attorney-at-Law, Partner',
