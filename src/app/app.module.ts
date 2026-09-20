@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslatePipe, provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,11 +28,6 @@ import { ContractLawComponent } from './contract-law/contract-law.component';
 import { PublicLawComponent } from './public-law/public-law.component';
 import { ImmobilienrechtComponent } from './immobilienrecht/immobilienrecht.component';
 import { ZivilprozessrechtComponent } from './zivilprozessrecht/zivilprozessrecht.component';
-
-// AoT-kompatibler Translate Loader
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
 
 @NgModule({
   declarations: [
@@ -63,13 +58,17 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, // unbedingt nötig
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
+    HttpClientModule,
+    TranslatePipe
+  ],
+  providers: [
+    provideTranslateService({
+      loader: provideTranslateHttpLoader({
+        prefix: './assets/i18n/',
+        suffix: '.json'
+      }),
+      fallbackLang: 'de',
+      lang: 'de'
     })
   ],
   bootstrap: [AppComponent]

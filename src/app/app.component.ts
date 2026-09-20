@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'gsplegal';
   germanSelected = false;
 
-  changeLanguage = function (key) {
+  changeLanguage = (key: string): void => {
     this.germanSelected = (key === 'de');
     this.translate.use(key);
   };
@@ -21,7 +21,6 @@ export class AppComponent {
     private translate: TranslateService,
     private scrollService: ScrollService
   ) {
-    translate.setDefaultLang('de');
     // Enable auto-scrolling to top on route changes
     this.scrollService.enableAutoScrollToTop();
   }

@@ -15,7 +15,7 @@ export class ImmobilienrechtComponent implements OnInit {
     private translate: TranslateService,
     private location: Location
   ) {
-    this.currentLang = this.translate.currentLang || 'de';
+    this.currentLang = this.translate.getCurrentLang() || 'de';
   }
 
   ngOnInit(): void {

@@ -13,7 +13,7 @@ export class InternationalComponent implements OnInit {
   currentLang: string;
 
   constructor(private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang || 'de';
+    this.currentLang = this.translate.getCurrentLang() || 'de';
   }
 
   ngOnInit() {

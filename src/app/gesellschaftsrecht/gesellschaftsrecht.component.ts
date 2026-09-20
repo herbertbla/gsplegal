@@ -19,7 +19,7 @@ export class GesellschaftsrechtComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.currentLang = this.translate.currentLang || 'de';
+    this.currentLang = this.translate.getCurrentLang() || 'de';
     this.translate.onLangChange.subscribe(event => {
       this.currentLang = event.lang;
     });

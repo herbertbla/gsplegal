@@ -22,12 +22,12 @@ export class RoupecComponent implements OnInit {
     private translate: TranslateService
   ) {
     this.teamMember$ = this.teamMemberService.getTeamMemberById('anita-roupec');
-    this.currentLang = this.translate.currentLang || 'de';
+    this.currentLang = this.translate.getCurrentLang() || 'de';
   }
 
   ngOnInit(): void {
     // Set initial language
-    this.currentLang = this.translate.currentLang || 'de';
+    this.currentLang = this.translate.getCurrentLang() || 'de';
 
     // Subscribe to language changes
     this.translate.onLangChange.subscribe(event => {
