@@ -162,7 +162,7 @@ export class TeamMemberService {
     {
       id: 'anita-roupec',
       title: 'Mag.',
-      firstName: 'ANIA',
+      firstName: 'ANITA',
       lastName: 'ROUPEC',
       position: 'Rechtsanwältin',
       positionEn: 'Attorney-at-Law',
