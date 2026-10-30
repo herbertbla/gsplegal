@@ -25,7 +25,7 @@
               <div class="gspteambottomcentered">
                 <span class="team-person-title">MMag. Dr.</span>
                 <strong class="team-person-name">Bernhard Garger</strong>
-                <span class="team-person-role">Rechtsanwalt | Partner</span>
+                <span class="team-person-role">{{ currentLang === 'en' ? 'Attorney-at-Law, Partner' : 'Rechtsanwalt | Partner' }}</span>
               </div>
             </div>
           </div>
@@ -40,8 +40,8 @@
               <img class="gspcardimagepartner" src="assets/images/spallinger.jpg" alt="Forrest Spallinger">
               <div class="gspteambottomcentered">
                 <span class="team-person-title">MMag.</span>
-                <strong class="team-person-name">Forrest Spallinger</strong>
-                <span class="team-person-role">Rechtsanwalt | Partner</span>
+                <strong class="team-person-name">Forrest Spallinger<span *ngIf="currentLang === 'en'">, LL.M.</span></strong>
+                <span class="team-person-role">{{ currentLang === 'en' ? 'Attorney-at-Law, Partner' : 'Rechtsanwalt | Partner' }}</span>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
               <div class="gspteambottomcentered">
                 <span class="team-person-title">Dr.</span>
                 <strong class="team-person-name">Daniel Reiter</strong>
-                <span class="team-person-role">Rechtsanwalt | Partner</span>
+                <span class="team-person-role">{{ currentLang === 'en' ? 'Attorney-at-Law, Partner' : 'Rechtsanwalt | Partner' }}</span>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@
               <div class="gspteambottomcentered">
                 <span class="team-person-title">Mag.<sup class="gsphochgestellt">a</sup></span>
                 <strong class="team-person-name">Anita Roupec</strong>
-                <span class="team-person-role">Rechtsanwältin</span>
+                <span class="team-person-role">{{ currentLang === 'en' ? 'Attorney-at-Law' : 'Rechtsanwältin' }}</span>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
             <div class="gspteambottomcentered">
               <span class="team-person-title">Mag.<sup class="gsphochgestellt">a</sup></span>
               <strong class="team-person-name">Sarah Kerschenbauer</strong>
-              <span class="team-person-role">Rechtsanwaltsanwärterin</span>
+              <span class="team-person-role">{{ currentLang === 'en' ? 'Associate' : 'Rechtsanwaltsanwärterin' }}</span>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
             <img class="gspcardimagepartner" src="assets/images/jmanzenreither.png" alt="Jasmin Manzenreither">
             <div class="gspteambottomcentered">
               <strong class="team-person-name">Jasmin Manzenreither</strong>
-              <span class="team-person-role">Juristische Mitarbeiterin</span>
+              <span class="team-person-role">{{ currentLang === 'en' ? 'Legal Assistant' : 'Juristische Mitarbeiterin' }}</span>
             </div>
           </div>
         </div>

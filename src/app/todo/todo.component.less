@@ -11,6 +11,32 @@
   }
 }
 
+.todo-table-wrap {
+  overflow-x: auto;
+}
+
+.todo-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid #cbd5d1;
+    padding: 0.7rem;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  th { background: #e8f0ed; }
+  td:nth-child(2) { min-width: 150px; }
+  td:nth-child(3) { min-width: 300px; }
+  td:last-child { white-space: nowrap; }
+
+  .todo-status-open { background: #fce8e6; }
+  .todo-status-clarify { background: #fff3cd; }
+  .todo-status-done { background: #e7f4ea; }
+}
+
 .todo-content {
   width: 100%;
   max-width: 1600px;

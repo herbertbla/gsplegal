@@ -170,25 +170,31 @@ export class TeamMemberService {
       email: 'aroupec@gsplegal.at',
       phone: '+43-1-319 94 70',
       fax: '+43-1-319 94 70-70',
-      expertise: [
-        'xxx'
-      ],
-      expertiseEn: [
-        'xxx'
-      ],
+      expertise: ['Arbeitsrecht', 'Allgemeines Vertragsrecht', 'Unternehmens- und Gesellschaftsrecht'],
+      expertiseEn: ['Contract Law', 'Labor Law', 'Corporate and Commercial Law'],
       languages: ['Deutsch', 'Englisch'],
       languagesEn: ['German', 'English'],
       education: [
-        'xxx'
+        'Zertifizierte Mediatorin, Akademie für angewandte Zukunftsbildung GmbH (2026)',
+        'Studium der Rechtswissenschaften, Universität Wien (Mag. iur. 2012)'
       ],
       educationEn: [
-        'xxx'
+        'Certified Mediator, Academy for Applied Future Education GmbH (2026)',
+        'University degree in Law, University of Vienna (Mag. iur. 2012)'
       ],
       experience: [
-        'xxx'
+        'Rechtsanwältin bei GARGER SPALLINGER Rechtsanwälte GmbH seit 2019',
+        'Eingetragene Rechtsanwältin seit 2019',
+        'Rechtsanwaltsanwärterin bei GARGER SPALLINGER Rechtsanwälte GmbH von 2016 bis 2019',
+        'Juristin im Fachverband für Gesundheitsbetriebe, Wirtschaftskammer Österreich von 2015 bis 2016',
+        'Berufsanwärterin Steuerberatung bei einer renommierten internationalen Wirtschaftsprüfungs- und Steuerberatungsgesellschaft von 2013 bis 2014'
       ],
       experienceEn: [
-        'xxx'
+        'Attorney-at-Law at GARGER SPALLINGER Attorneys-at-Law GmbH since 2019',
+        'Admitted as Attorney-at-Law in Austria since 2019',
+        'Associate at GARGER SPALLINGER Attorneys-at-Law GmbH from 2016 to 2019',
+        'Legal counsel for the Association of Healthcare Businesses, Austrian Chamber of Commerce, from 2015 to 2016',
+        'Tax Consulting Trainee at a renowned international auditing and tax consulting firm from 2013 to 2014'
       ]
     }
     // Add more team members as needed

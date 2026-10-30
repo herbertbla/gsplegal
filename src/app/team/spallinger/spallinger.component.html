@@ -14,11 +14,11 @@
           <img [src]="member.imageUrl" 
                [alt]="member.firstName + ' ' + member.lastName" 
                class="img-fluid rounded-circle mb-4" 
-               style="width: 200px; height: 200px; object-fit: cover;">
+               style="width: 200px; height: 200px; object-fit: cover; object-position: center top;">
           
-          <h2 class="h4 fw-bold mb-0">{{ member.title }} {{ member.firstName }} {{ member.lastName }}</h2>
-          <p class="text-muted mb-2">{{ currentLang === 'en' ? 'Attorney-at-Law, New York' : 'Rechtsanwalt, Partner' }}</p>
-          <p class="text-muted mb-4">Attorney-at-Law, New York</p>
+          <h2 class="h4 fw-bold mb-0">{{ member.title }} {{ member.firstName }} {{ member.lastName }}, LL.M.</h2>
+          <p class="text-muted mb-2">{{ currentLang === 'en' ? 'Attorney-at-Law, Partner' : 'Rechtsanwalt, Partner' }}</p>
+          <p class="text-muted mb-4">{{ currentLang === 'en' ? 'Admitted in Austria and New York' : 'Zugelassen in Österreich und New York' }}</p>
           
           <div class="text-start">
             <h5 class="mb-3 border-bottom pb-2">{{ currentLang === 'en' ? 'Contact' : 'Kontakt' }}</h5>

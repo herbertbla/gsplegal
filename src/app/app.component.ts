@@ -10,7 +10,7 @@ import { ScrollService } from './services/scroll.service';
 })
 export class AppComponent {
   title = 'gsplegal';
-  germanSelected = false;
+  germanSelected = true;
 
   changeLanguage = (key: string): void => {
     this.germanSelected = (key === 'de');
@@ -21,6 +21,9 @@ export class AppComponent {
     private translate: TranslateService,
     private scrollService: ScrollService
   ) {
+    if (new URLSearchParams(window.location.search).get('lang') === 'en') {
+      this.changeLanguage('en');
+    }
     // Enable auto-scrolling to top on route changes
     this.scrollService.enableAutoScrollToTop();
   }

@@ -17,10 +17,10 @@
   <div class="gsp-contact-content">
     <address>
       <strong>GARGER SPALLINGER Rechtsanwälte GmbH</strong><br>
-      Biberstraße 22, A-1010 Wien<br>
+      Biberstraße 22, A-1010 {{ currentLang === 'en' ? 'Vienna' : 'Wien' }}<br>
       {{ 'PHONE_LABEL' | translate }} <a class="gspkontaktemail" href="tel:+4313199470">+43-1-319 94 70</a>,
       Fax: <a class="gspkontaktemail" href="tel:+431319947070">+43-1-319 94 70-70</a><br/>
-      <a class="gspkontaktemail" href="mailto:office@gsplegal.at">Email: office(AT)gsplegal.at </a>
+      <a class="gspkontaktemail" href="mailto:office@gsplegal.at">Email: office@gsplegal.at </a>
     </address>
   </div>
 </div>
@@ -37,6 +37,8 @@
 
 <div class="gsp-page-content gsp-location-map">
   <div class="gsp-contact-content">
-    <img class="gspanfahrt" src="../../assets/images/plan_kontakt.jpg" alt="Anfahrtsplan GARGER SPALLINGER Rechtsanwälte">
+    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Biberstra%C3%9Fe+22%2C+1010+Wien" target="_blank" rel="noopener noreferrer" [attr.aria-label]="currentLang === 'en' ? 'Plan your route in Google Maps' : 'Route in Google Maps planen'">
+      <img class="gspanfahrt" src="../../assets/images/plan_kontakt.jpg" alt="Anfahrtsplan GARGER SPALLINGER Rechtsanwälte">
+    </a>
   </div>
 </div>

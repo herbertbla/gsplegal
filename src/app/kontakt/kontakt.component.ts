@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-kontakt',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
     standalone: false
 })
 export class KontaktComponent implements OnInit {
+  currentLang = 'de';
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+    this.currentLang = this.translate.getCurrentLang() || 'de';
+    this.translate.onLangChange.subscribe(event => this.currentLang = event.lang);
   }
 
 }
