@@ -48,3 +48,6 @@ Thumbs.db
 /.angular/cache
 /dist/*
 /dist/
+/_*/
+_*
+

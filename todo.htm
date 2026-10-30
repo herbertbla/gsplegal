@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="de">
-<head><meta charset="utf-8"><title>Todos</title><style>
-body{font:16px/1.45 system-ui,sans-serif;margin:2rem;color:#222}
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Todos</title><style>
+body{font:16px/1.45 system-ui,sans-serif;max-width:2400px;margin:2rem auto;padding:0 1.5rem;color:#222}
 .todo-table-wrap{overflow-x:auto}
-.todo-table{border-collapse:collapse;width:100%;min-width:850px}
+.todo-table{border-collapse:collapse;width:100%;min-width:0}
 .todo-table th,.todo-table td{border:1px solid #cbd5d1;padding:.7rem;vertical-align:top;text-align:left}
 .todo-table th{background:#e8f0ed}
 .todo-table td:nth-child(2){min-width:150px}
@@ -13,6 +13,23 @@ body{font:16px/1.45 system-ui,sans-serif;margin:2rem;color:#222}
 .todo-status-clarify{background:#fff3cd}
 .todo-status-done{background:#e7f4ea}
 a{color:#004439}
+@media(min-width:768px){.todo-table{min-width:850px}}
+@media(max-width:767.98px){
+body{margin:.75rem;padding:0}
+.todo-table-wrap{overflow:visible}
+.todo-table,.todo-table tbody,.todo-table tr{display:block;width:100%;min-width:0}
+.todo-table thead{display:none}
+.todo-table tr{margin-bottom:1rem;border:1px solid #cbd5d1}
+.todo-table td{display:block;width:100%;min-width:0!important;box-sizing:border-box;border:0;border-bottom:1px solid #cbd5d1;overflow-wrap:anywhere;white-space:normal!important}
+.todo-table td:last-child{border-bottom:0}
+.todo-table td::before{display:block;margin-bottom:.25rem;font-weight:700}
+.todo-table td:nth-child(1)::before{content:'Status'}
+.todo-table td:nth-child(2)::before{content:'Topic'}
+.todo-table td:nth-child(3)::before{content:'Originalbeschreibung'}
+.todo-table td:nth-child(4)::before{content:'Erledigung'}
+.todo-table td:nth-child(5)::before{content:'Kommentar'}
+.todo-table td:nth-child(6)::before{content:'Link'}
+}
 </style></head>
 <body>
 <h1>Todos</h1>
