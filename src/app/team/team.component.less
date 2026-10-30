@@ -38,6 +38,28 @@
   object-position: top center;
   animation: fadeIn 2s ease forwards;
 }
+
+.anita-card-image {
+  overflow: hidden;
+  background-color: #cfd3d5;
+  isolation: isolate;
+}
+
+.anita-portrait {
+  animation: anitaFadeIn 2s ease;
+  mix-blend-mode: multiply;
+  transform: scale(1.55);
+  transform-origin: center 15%;
+}
+
+@keyframes anitaFadeIn {
+  from { opacity: 0; transform: scale(1.63); }
+  to { opacity: 1; transform: scale(1.55); }
+}
+
+.gsp-card-hover:hover .anita-portrait {
+  transform: scale(1.63);
+}
 .gspcardtextpartner {
   background-size: cover; /* <------ */
   background-repeat: no-repeat;

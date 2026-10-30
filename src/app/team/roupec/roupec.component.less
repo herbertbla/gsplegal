@@ -34,6 +34,37 @@ img {
   height: auto;
 }
 
+.anita-profile-frame {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 0.75rem;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #cfd3d5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  isolation: isolate;
+
+  .anita-profile-image {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+    object-fit: cover;
+    object-position: center top;
+    mix-blend-mode: multiply;
+    transform: scale(1.55);
+    transform-origin: center 15%;
+    animation: anitaFadeIn 2s ease;
+  }
+}
+
+@keyframes anitaFadeIn {
+  from { opacity: 0; transform: scale(1.63); }
+  to { opacity: 1; transform: scale(1.55); }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(1.05); }
   to   { opacity: 1; transform: scale(1); }

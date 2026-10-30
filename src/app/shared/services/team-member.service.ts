@@ -166,7 +166,7 @@ export class TeamMemberService {
       lastName: 'ROUPEC',
       position: 'Rechtsanwältin',
       positionEn: 'Attorney-at-Law',
-      imageUrl: 'assets/images/roupec.jpg',
+      imageUrl: 'assets/images/roupec-2026.png',
       email: 'aroupec@gsplegal.at',
       phone: '+43-1-319 94 70',
       fax: '+43-1-319 94 70-70',
