@@ -16,7 +16,7 @@
                  [alt]="member.firstName + ' ' + member.lastName"
                  class="anita-profile-image">
           </div>
-          <h2 class="h4 fw-bold mb-0">{{ member.title }} {{ member.firstName }} {{ member.lastName }}</h2>
+          <h2 class="h4 fw-bold mb-0">{{ member.title }}<sup class="gsphochgestellt">a</sup> {{ member.firstName }} {{ member.lastName }}</h2>
           <p class="text-muted mb-2">{{ currentLang === 'en' ? member.positionEn : member.position }}</p>
           <div class="text-start">
             <h5 class="mb-3 border-bottom pb-2">{{ currentLang === 'en' ? 'Contact' : 'Kontakt' }}</h5>
