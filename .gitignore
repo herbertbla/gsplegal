@@ -1,7 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-#/dist
+# compiled output (dist is intentionally tracked)
 /tmp
 /out-tsc
 # Only exists if Bazel was run
@@ -46,8 +45,6 @@ testem.log
 .DS_Store
 Thumbs.db
 /.angular/cache
-/dist/*
-/dist/
 /_*/
 _*
 
